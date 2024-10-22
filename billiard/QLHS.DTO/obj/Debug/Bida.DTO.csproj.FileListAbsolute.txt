@@ -1,0 +1,20 @@
+E:\Face\billiard-management-master\bin\Bida.DTO.dll
+E:\Face\billiard-management-master\bin\Bida.DTO.pdb
+E:\Face\billiard-management-master\QLHS.DTO\obj\Debug\Bida.DTO.dll
+E:\Face\billiard-management-master\QLHS.DTO\obj\Debug\Bida.DTO.pdb
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\bin\Bida.DTO.dll
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\bin\Bida.DTO.pdb
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.AssemblyReference.cache
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.CoreCompileInputs.cache
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\QLHS.DTO\obj\Debug\Bida.DTO.dll
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\QLHS.DTO\obj\Debug\Bida.DTO.pdb
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\bin\Bida.DTO.dll.config
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.Up2Date
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\bin\Bida.DTO.dll.config
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\bin\Bida.DTO.dll
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\bin\Bida.DTO.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.Up2Date
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\QLHS.DTO\obj\Debug\Bida.DTO.dll
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\QLHS.DTO\obj\Debug\Bida.DTO.pdb

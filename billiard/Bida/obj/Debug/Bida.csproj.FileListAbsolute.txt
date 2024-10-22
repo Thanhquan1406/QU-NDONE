@@ -1,0 +1,48 @@
+E:\Face\billiard-management-master\bin\Bida.exe
+E:\Face\billiard-management-master\bin\Bida.pdb
+E:\Face\billiard-management-master\Bida\obj\Debug\Bida.csprojResolveAssemblyReference.cache
+E:\Face\billiard-management-master\Bida\obj\Debug\Bida.frmAdd.resources
+E:\Face\billiard-management-master\Bida\obj\Debug\Bida.frmBan.resources
+E:\Face\billiard-management-master\Bida\obj\Debug\Bida.frmBienLai.resources
+E:\Face\billiard-management-master\Bida\obj\Debug\Bida.frmChuyen.resources
+E:\Face\billiard-management-master\Bida\obj\Debug\Bida.frmCreateBan.resources
+E:\Face\billiard-management-master\Bida\obj\Debug\Bida.frmMain.resources
+E:\Face\billiard-management-master\Bida\obj\Debug\Bida.frmLogin.resources
+E:\Face\billiard-management-master\Bida\obj\Debug\Bida.Properties.Resources.resources
+E:\Face\billiard-management-master\Bida\obj\Debug\Bida.csproj.GenerateResource.Cache
+E:\Face\billiard-management-master\Bida\obj\Debug\Bida.exe
+E:\Face\billiard-management-master\Bida\obj\Debug\Bida.pdb
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\bin\Bida.exe.config
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\bin\Bida.exe
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\bin\Bida.pdb
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.csproj.AssemblyReference.cache
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.frmAdd.resources
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.frmBan.resources
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.frmBienLai.resources
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.frmChuyen.resources
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.frmCreateBan.resources
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.frmMain.resources
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.frmLogin.resources
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.Properties.Resources.resources
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.csproj.GenerateResource.cache
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.csproj.CoreCompileInputs.cache
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.csproj.Up2Date
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.exe
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida\obj\Debug\Bida.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\bin\Bida.exe.config
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\bin\Bida.exe
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\bin\Bida.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.frmAdd.resources
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.frmBan.resources
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.frmBienLai.resources
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.frmChuyen.resources
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.frmCreateBan.resources
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.frmMain.resources
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.frmLogin.resources
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.Properties.Resources.resources
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.csproj.GenerateResource.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.csproj.Up2Date
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.exe
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida\obj\Debug\Bida.pdb

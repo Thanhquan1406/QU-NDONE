@@ -1,0 +1,22 @@
+E:\Face\billiard-management-master\bin\Bida.DAO.dll
+E:\Face\billiard-management-master\bin\Bida.DAO.pdb
+E:\Face\billiard-management-master\Bida.DAO\obj\Debug\Bida.DAO.csprojResolveAssemblyReference.cache
+E:\Face\billiard-management-master\Bida.DAO\obj\Debug\Bida.DAO.dll
+E:\Face\billiard-management-master\Bida.DAO\obj\Debug\Bida.DAO.pdb
+E:\Face\billiard-management-master\bin\Bida.DAO.dll.config
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\bin\Bida.DAO.dll.config
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\bin\Bida.DAO.dll
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\bin\Bida.DAO.pdb
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.AssemblyReference.cache
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.CoreCompileInputs.cache
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.Up2Date
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida.DAO\obj\Debug\Bida.DAO.dll
+C:\Users\DIMON\Desktop\QuanLyBida\QuanLyBida\billiard\Bida.DAO\obj\Debug\Bida.DAO.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\bin\Bida.DAO.dll.config
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\bin\Bida.DAO.dll
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\bin\Bida.DAO.pdb
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.AssemblyReference.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.Up2Date
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida.DAO\obj\Debug\Bida.DAO.dll
+C:\Users\ADMIN\OneDrive\Máy tính\Demo\Demo_BIDA\billiard\Bida.DAO\obj\Debug\Bida.DAO.pdb
