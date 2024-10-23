@@ -43,7 +43,7 @@ namespace Bida.DAO
         public void executeNonQuery(string sql)
         {
             this.command = new SqlCommand(sql, conn);
-             this.command.ExecuteNonQuery();
+            this.command.ExecuteNonQuery();
         }
     }
 }

@@ -44,10 +44,11 @@
             this.metroTabControl1.Controls.Add(this.Tab1);
             this.metroTabControl1.Controls.Add(this.Tab2);
             this.metroTabControl1.FontSize = MetroFramework.MetroTabControlSize.Tall;
-            this.metroTabControl1.Location = new System.Drawing.Point(10, 89);
+            this.metroTabControl1.Location = new System.Drawing.Point(13, 110);
+            this.metroTabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.metroTabControl1.Name = "metroTabControl1";
             this.metroTabControl1.SelectedIndex = 0;
-            this.metroTabControl1.Size = new System.Drawing.Size(747, 511);
+            this.metroTabControl1.Size = new System.Drawing.Size(996, 629);
             this.metroTabControl1.Style = MetroFramework.MetroColorStyle.Green;
             this.metroTabControl1.TabIndex = 1;
             this.metroTabControl1.UseSelectable = true;
@@ -60,10 +61,11 @@
             this.Tab1.HorizontalScrollbar = true;
             this.Tab1.HorizontalScrollbarBarColor = true;
             this.Tab1.HorizontalScrollbarHighlightOnWheel = false;
-            this.Tab1.HorizontalScrollbarSize = 30;
+            this.Tab1.HorizontalScrollbarSize = 37;
             this.Tab1.Location = new System.Drawing.Point(4, 44);
+            this.Tab1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tab1.Name = "Tab1";
-            this.Tab1.Size = new System.Drawing.Size(739, 463);
+            this.Tab1.Size = new System.Drawing.Size(988, 581);
             this.Tab1.Style = MetroFramework.MetroColorStyle.Red;
             this.Tab1.TabIndex = 0;
             this.Tab1.Text = "Khu vực 1";
@@ -71,7 +73,7 @@
             this.Tab1.VerticalScrollbar = true;
             this.Tab1.VerticalScrollbarBarColor = true;
             this.Tab1.VerticalScrollbarHighlightOnWheel = false;
-            this.Tab1.VerticalScrollbarSize = 10;
+            this.Tab1.VerticalScrollbarSize = 13;
             this.Tab1.Click += new System.EventHandler(this.metroTabPage1_Click);
             // 
             // Tab2
@@ -79,33 +81,36 @@
             this.Tab2.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
             this.Tab2.HorizontalScrollbarBarColor = true;
             this.Tab2.HorizontalScrollbarHighlightOnWheel = false;
-            this.Tab2.HorizontalScrollbarSize = 10;
+            this.Tab2.HorizontalScrollbarSize = 12;
             this.Tab2.Location = new System.Drawing.Point(4, 44);
+            this.Tab2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Tab2.Name = "Tab2";
-            this.Tab2.Size = new System.Drawing.Size(739, 463);
+            this.Tab2.Size = new System.Drawing.Size(988, 581);
             this.Tab2.TabIndex = 1;
             this.Tab2.Text = "Khu vực 2";
             this.Tab2.VerticalScrollbarBarColor = true;
             this.Tab2.VerticalScrollbarHighlightOnWheel = false;
-            this.Tab2.VerticalScrollbarSize = 10;
+            this.Tab2.VerticalScrollbarSize = 13;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(177)))), ((int)(((byte)(89)))));
-            this.label1.Location = new System.Drawing.Point(76, 39);
+            this.label1.ForeColor = System.Drawing.Color.Turquoise;
+            this.label1.Location = new System.Drawing.Point(101, 48);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 25);
+            this.label1.Size = new System.Drawing.Size(302, 33);
             this.label1.TabIndex = 26;
             this.label1.Text = "Chọn bàn cần chuyển";
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bida.Properties.Resources.user11;
-            this.pictureBox1.Location = new System.Drawing.Point(623, 13);
+            this.pictureBox1.Location = new System.Drawing.Point(831, 16);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(31, 32);
+            this.pictureBox1.Size = new System.Drawing.Size(41, 39);
             this.pictureBox1.TabIndex = 25;
             this.pictureBox1.TabStop = false;
             // 
@@ -113,7 +118,8 @@
             // 
             this.lblNV.AutoSize = true;
             this.lblNV.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.lblNV.Location = new System.Drawing.Point(651, 20);
+            this.lblNV.Location = new System.Drawing.Point(868, 25);
+            this.lblNV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNV.Name = "lblNV";
             this.lblNV.Size = new System.Drawing.Size(93, 25);
             this.lblNV.Style = MetroFramework.MetroColorStyle.Green;
@@ -127,24 +133,27 @@
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Image = global::Bida.Properties.Resources.back;
-            this.btnBack.Location = new System.Drawing.Point(10, 13);
+            this.btnBack.Location = new System.Drawing.Point(13, 16);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(53, 43);
+            this.btnBack.Size = new System.Drawing.Size(71, 53);
             this.btnBack.TabIndex = 27;
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // frmChuyen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 626);
+            this.ClientSize = new System.Drawing.Size(1023, 770);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblNV);
             this.Controls.Add(this.metroTabControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmChuyen";
+            this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Load += new System.EventHandler(this.frmChuyen_Load);
             this.metroTabControl1.ResumeLayout(false);
