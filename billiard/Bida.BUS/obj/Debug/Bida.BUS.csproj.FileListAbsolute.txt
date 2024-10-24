@@ -27,3 +27,11 @@ C:\Users\thanh\Source\Repos\DoAnWindow\billiard\Bida.BUS\obj\Debug\Bida.BUS.cspr
 C:\Users\thanh\Source\Repos\DoAnWindow\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.Up2Date
 C:\Users\thanh\Source\Repos\DoAnWindow\billiard\Bida.BUS\obj\Debug\Bida.BUS.dll
 C:\Users\thanh\Source\Repos\DoAnWindow\billiard\Bida.BUS\obj\Debug\Bida.BUS.pdb
+D:\New folder\billiard\bin\Bida.BUS.dll.config
+D:\New folder\billiard\bin\Bida.BUS.dll
+D:\New folder\billiard\bin\Bida.BUS.pdb
+D:\New folder\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.AssemblyReference.cache
+D:\New folder\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.CoreCompileInputs.cache
+D:\New folder\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.Up2Date
+D:\New folder\billiard\Bida.BUS\obj\Debug\Bida.BUS.dll
+D:\New folder\billiard\Bida.BUS\obj\Debug\Bida.BUS.pdb

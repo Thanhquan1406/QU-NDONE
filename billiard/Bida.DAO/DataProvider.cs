@@ -10,7 +10,7 @@ namespace Bida.DAO
     class DataProvider
     {
         //public static string onStr = "Server=DLONG\\SQLEXPRESS;Database=Bida;Integrated Security=True;";
-        public static string onStr = "Server=LENOVO\\SQLEXPRESS01;Database=Bida;Integrated Security=True;";
+        public static string onStr = "Server=DLONG\\SQLEXPRESS;Database=Bida;Integrated Security=True;";
 
         SqlConnection conn;
         private SqlCommand command;

@@ -28,3 +28,11 @@ C:\Users\thanh\Source\Repos\DoAnWindow\billiard\bin\Bida.DAO.dll.config
 C:\Users\thanh\Source\Repos\DoAnWindow\billiard\bin\Bida.DAO.dll
 C:\Users\thanh\Source\Repos\DoAnWindow\billiard\bin\Bida.DAO.pdb
 C:\Users\thanh\Source\Repos\DoAnWindow\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.Up2Date
+D:\New folder\billiard\bin\Bida.DAO.dll.config
+D:\New folder\billiard\bin\Bida.DAO.dll
+D:\New folder\billiard\bin\Bida.DAO.pdb
+D:\New folder\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.AssemblyReference.cache
+D:\New folder\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.CoreCompileInputs.cache
+D:\New folder\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.Up2Date
+D:\New folder\billiard\Bida.DAO\obj\Debug\Bida.DAO.dll
+D:\New folder\billiard\Bida.DAO\obj\Debug\Bida.DAO.pdb

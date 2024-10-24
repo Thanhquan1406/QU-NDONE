@@ -138,12 +138,10 @@ namespace Bida
 
             this.Refesh();
 
-
         }
 
         private void btnEnd_Click(object sender, EventArgs e)
         {
-
 
             var date = DateTime.Now;
             int h = date.Hour;
@@ -155,7 +153,6 @@ namespace Bida
             this.Refesh();
             txtTimeEnd.Enabled = false;
             btnTinh.Enabled = true;
-
 
         }
 
@@ -175,7 +172,6 @@ namespace Bida
         {
 
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             frmChuyen a = new frmChuyen(nhanvien, ban);
@@ -200,8 +196,7 @@ namespace Bida
                 int tongTienOrder = TongTienOrder;
                 int Total = tiengio + tongTienOrder;
                 txtTienOrder.Text = tongTienOrder.ToString();
-                txtGia.Text = Total.ToString();
-               
+                txtGia.Text = Total.ToString();            
 
                 btnPay.Enabled = true;
             }
@@ -246,9 +241,7 @@ namespace Bida
             bl.Show();
             this.Close();
 
-
         }
-
         private void btnOder_Click(object sender, EventArgs e)
         {
             frmOrder a = new frmOrder(ban, nhanvien);

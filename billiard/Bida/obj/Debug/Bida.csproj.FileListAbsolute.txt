@@ -64,3 +64,21 @@ C:\Users\thanh\Source\Repos\DoAnWindow\billiard\bin\Bida.exe
 C:\Users\thanh\Source\Repos\DoAnWindow\billiard\bin\Bida.pdb
 C:\Users\thanh\Source\Repos\DoAnWindow\billiard\Bida\obj\Debug\Bida.csproj.Up2Date
 C:\Users\thanh\Source\Repos\DoAnWindow\billiard\Bida\obj\Debug\Bida.frmOrder.resources
+D:\New folder\billiard\bin\Bida.exe.config
+D:\New folder\billiard\bin\Bida.exe
+D:\New folder\billiard\bin\Bida.pdb
+D:\New folder\billiard\Bida\obj\Debug\Bida.csproj.AssemblyReference.cache
+D:\New folder\billiard\Bida\obj\Debug\Bida.frmAdd.resources
+D:\New folder\billiard\Bida\obj\Debug\Bida.frmBan.resources
+D:\New folder\billiard\Bida\obj\Debug\Bida.frmBienLai.resources
+D:\New folder\billiard\Bida\obj\Debug\Bida.frmChuyen.resources
+D:\New folder\billiard\Bida\obj\Debug\Bida.frmCreateBan.resources
+D:\New folder\billiard\Bida\obj\Debug\Bida.frmMain.resources
+D:\New folder\billiard\Bida\obj\Debug\Bida.frmLogin.resources
+D:\New folder\billiard\Bida\obj\Debug\Bida.frmOrder.resources
+D:\New folder\billiard\Bida\obj\Debug\Bida.Properties.Resources.resources
+D:\New folder\billiard\Bida\obj\Debug\Bida.csproj.GenerateResource.cache
+D:\New folder\billiard\Bida\obj\Debug\Bida.csproj.CoreCompileInputs.cache
+D:\New folder\billiard\Bida\obj\Debug\Bida.csproj.Up2Date
+D:\New folder\billiard\Bida\obj\Debug\Bida.exe
+D:\New folder\billiard\Bida\obj\Debug\Bida.pdb

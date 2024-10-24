@@ -19,6 +19,6 @@ namespace Bida.DTO
 
         public int SOLUONG { get; set; }
 
-        public int PRICE { get; set; }
+        public int DONGIA { get; set; }
     }
 }

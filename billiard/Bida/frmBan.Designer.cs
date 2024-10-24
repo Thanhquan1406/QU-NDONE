@@ -145,7 +145,7 @@
             // 
             this.lblnv.AutoSize = true;
             this.lblnv.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.lblnv.Location = new System.Drawing.Point(700, 30);
+            this.lblnv.Location = new System.Drawing.Point(821, 35);
             this.lblnv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblnv.Name = "lblnv";
             this.lblnv.Size = new System.Drawing.Size(93, 25);
@@ -239,7 +239,7 @@
             this.btnPay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnPay.Image = global::Bida.Properties.Resources.dollar_flat;
             this.btnPay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPay.Location = new System.Drawing.Point(571, 562);
+            this.btnPay.Location = new System.Drawing.Point(675, 484);
             this.btnPay.Margin = new System.Windows.Forms.Padding(4);
             this.btnPay.Name = "btnPay";
             this.btnPay.Size = new System.Drawing.Size(239, 70);
@@ -258,7 +258,7 @@
             this.btnChange.ForeColor = System.Drawing.Color.White;
             this.btnChange.Image = global::Bida.Properties.Resources.exchange;
             this.btnChange.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnChange.Location = new System.Drawing.Point(687, 94);
+            this.btnChange.Location = new System.Drawing.Point(759, 78);
             this.btnChange.Margin = new System.Windows.Forms.Padding(4);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(123, 89);
@@ -271,7 +271,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Bida.Properties.Resources.user11;
-            this.pictureBox1.Location = new System.Drawing.Point(663, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(759, 21);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 39);
@@ -301,10 +301,10 @@
             this.btnTinh.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTinh.ForeColor = System.Drawing.Color.White;
             this.btnTinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTinh.Location = new System.Drawing.Point(417, 310);
+            this.btnTinh.Location = new System.Drawing.Point(444, 312);
             this.btnTinh.Margin = new System.Windows.Forms.Padding(4);
             this.btnTinh.Name = "btnTinh";
-            this.btnTinh.Size = new System.Drawing.Size(209, 38);
+            this.btnTinh.Size = new System.Drawing.Size(181, 38);
             this.btnTinh.TabIndex = 7;
             this.btnTinh.Text = "Tiền";
             this.btnTinh.UseVisualStyleBackColor = false;
@@ -397,13 +397,13 @@
             this.btnOder.BackColor = System.Drawing.Color.Turquoise;
             this.btnOder.FlatAppearance.BorderSize = 0;
             this.btnOder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnOder.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOder.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOder.ForeColor = System.Drawing.Color.White;
             this.btnOder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOder.Location = new System.Drawing.Point(687, 191);
+            this.btnOder.Location = new System.Drawing.Point(759, 203);
             this.btnOder.Margin = new System.Windows.Forms.Padding(4);
             this.btnOder.Name = "btnOder";
-            this.btnOder.Size = new System.Drawing.Size(123, 36);
+            this.btnOder.Size = new System.Drawing.Size(138, 36);
             this.btnOder.TabIndex = 33;
             this.btnOder.Text = "Thức Uống";
             this.btnOder.UseVisualStyleBackColor = false;
@@ -438,7 +438,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 661);
+            this.ClientSize = new System.Drawing.Size(945, 661);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTienOrder);
             this.Controls.Add(this.btnOder);

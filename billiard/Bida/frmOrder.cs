@@ -30,10 +30,10 @@ namespace Bida
         private void frmOrder_Load(object sender, EventArgs e)
         {
             // Chuỗi kết nối tới SQL Server với server name và database name của bạn
-            string connectionString = "Data Source=LENOVO\\SQLEXPRESS01;Initial Catalog=Bida;Integrated Security=True";
+            string connectionString = "Data Source=DLONG\\SQLEXPRESS;Initial Catalog=Bida;Integrated Security=True";
 
             // Câu truy vấn SQL để lấy dữ liệu từ bảng ORDER
-            string query = "SELECT TENNUOC, PRICE FROM [ORDER]";
+            string query = "SELECT * FROM [ORDER]";
 
 
 
