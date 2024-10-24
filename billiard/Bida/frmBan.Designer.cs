@@ -54,6 +54,9 @@
             this.picBan = new System.Windows.Forms.PictureBox();
             this.bttSave = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.btnOder = new System.Windows.Forms.Button();
+            this.txtTienOrder = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -77,7 +80,7 @@
             this.lblBan.BackColor = System.Drawing.SystemColors.Window;
             this.lblBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBan.Location = new System.Drawing.Point(256, 76);
-            this.lblBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.lblBan.Margin = new System.Windows.Forms.Padding(4);
             this.lblBan.Name = "lblBan";
             this.lblBan.Size = new System.Drawing.Size(116, 47);
             this.lblBan.TabIndex = 1;
@@ -87,7 +90,7 @@
             // 
             this.txtTimeStart.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimeStart.Location = new System.Drawing.Point(40, 256);
-            this.txtTimeStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimeStart.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimeStart.Multiline = true;
             this.txtTimeStart.Name = "txtTimeStart";
             this.txtTimeStart.ReadOnly = true;
@@ -98,7 +101,7 @@
             // 
             this.txtTimeEnd.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTimeEnd.Location = new System.Drawing.Point(40, 313);
-            this.txtTimeEnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtTimeEnd.Margin = new System.Windows.Forms.Padding(4);
             this.txtTimeEnd.Multiline = true;
             this.txtTimeEnd.Name = "txtTimeEnd";
             this.txtTimeEnd.ReadOnly = true;
@@ -113,7 +116,7 @@
             this.comKH.FormattingEnabled = true;
             this.comKH.ItemHeight = 24;
             this.comKH.Location = new System.Drawing.Point(192, 203);
-            this.comKH.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comKH.Margin = new System.Windows.Forms.Padding(4);
             this.comKH.Name = "comKH";
             this.comKH.Size = new System.Drawing.Size(275, 30);
             this.comKH.TabIndex = 11;
@@ -182,7 +185,7 @@
             this.txtGio.BackColor = System.Drawing.Color.White;
             this.txtGio.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGio.Location = new System.Drawing.Point(240, 395);
-            this.txtGio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGio.Margin = new System.Windows.Forms.Padding(4);
             this.txtGio.Multiline = true;
             this.txtGio.Name = "txtGio";
             this.txtGio.ReadOnly = true;
@@ -205,7 +208,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Turquoise;
-            this.label3.Location = new System.Drawing.Point(31, 471);
+            this.label3.Location = new System.Drawing.Point(28, 518);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(186, 36);
@@ -218,8 +221,8 @@
             this.txtGia.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGia.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtGia.ForeColor = System.Drawing.Color.Turquoise;
-            this.txtGia.Location = new System.Drawing.Point(240, 463);
-            this.txtGia.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtGia.Location = new System.Drawing.Point(240, 511);
+            this.txtGia.Margin = new System.Windows.Forms.Padding(4);
             this.txtGia.Multiline = true;
             this.txtGia.Name = "txtGia";
             this.txtGia.ReadOnly = true;
@@ -237,7 +240,7 @@
             this.btnPay.Image = global::Bida.Properties.Resources.dollar_flat;
             this.btnPay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPay.Location = new System.Drawing.Point(571, 562);
-            this.btnPay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPay.Margin = new System.Windows.Forms.Padding(4);
             this.btnPay.Name = "btnPay";
             this.btnPay.Size = new System.Drawing.Size(239, 70);
             this.btnPay.TabIndex = 30;
@@ -256,7 +259,7 @@
             this.btnChange.Image = global::Bida.Properties.Resources.exchange;
             this.btnChange.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnChange.Location = new System.Drawing.Point(687, 94);
-            this.btnChange.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnChange.Margin = new System.Windows.Forms.Padding(4);
             this.btnChange.Name = "btnChange";
             this.btnChange.Size = new System.Drawing.Size(123, 89);
             this.btnChange.TabIndex = 23;
@@ -269,7 +272,7 @@
             // 
             this.pictureBox1.Image = global::Bida.Properties.Resources.user11;
             this.pictureBox1.Location = new System.Drawing.Point(663, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 39);
             this.pictureBox1.TabIndex = 22;
@@ -282,7 +285,7 @@
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBack.Image = global::Bida.Properties.Resources.back;
             this.btnBack.Location = new System.Drawing.Point(7, 20);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(71, 53);
             this.btnBack.TabIndex = 8;
@@ -297,14 +300,13 @@
             this.btnTinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTinh.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTinh.ForeColor = System.Drawing.Color.White;
-            this.btnTinh.Image = global::Bida.Properties.Resources.time_;
             this.btnTinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTinh.Location = new System.Drawing.Point(417, 310);
-            this.btnTinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnTinh.Margin = new System.Windows.Forms.Padding(4);
             this.btnTinh.Name = "btnTinh";
             this.btnTinh.Size = new System.Drawing.Size(209, 38);
             this.btnTinh.TabIndex = 7;
-            this.btnTinh.Text = "Tính giờ";
+            this.btnTinh.Text = "Tiền";
             this.btnTinh.UseVisualStyleBackColor = false;
             this.btnTinh.Click += new System.EventHandler(this.btnTinh_Click);
             // 
@@ -319,7 +321,7 @@
             this.btnEnd.Image = global::Bida.Properties.Resources.end;
             this.btnEnd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEnd.Location = new System.Drawing.Point(240, 313);
-            this.btnEnd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEnd.Margin = new System.Windows.Forms.Padding(4);
             this.btnEnd.Name = "btnEnd";
             this.btnEnd.Size = new System.Drawing.Size(143, 38);
             this.btnEnd.TabIndex = 6;
@@ -338,7 +340,7 @@
             this.btnStart.Image = global::Bida.Properties.Resources.play;
             this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStart.Location = new System.Drawing.Point(240, 256);
-            this.btnStart.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(4);
             this.btnStart.Name = "btnStart";
             this.btnStart.Size = new System.Drawing.Size(143, 38);
             this.btnStart.TabIndex = 4;
@@ -350,7 +352,7 @@
             // picBan
             // 
             this.picBan.Location = new System.Drawing.Point(115, 21);
-            this.picBan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picBan.Margin = new System.Windows.Forms.Padding(4);
             this.picBan.Name = "picBan";
             this.picBan.Size = new System.Drawing.Size(133, 145);
             this.picBan.TabIndex = 0;
@@ -365,7 +367,7 @@
             this.bttSave.ForeColor = System.Drawing.Color.White;
             this.bttSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bttSave.Location = new System.Drawing.Point(541, 203);
-            this.bttSave.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bttSave.Margin = new System.Windows.Forms.Padding(4);
             this.bttSave.Name = "bttSave";
             this.bttSave.Size = new System.Drawing.Size(85, 36);
             this.bttSave.TabIndex = 31;
@@ -383,18 +385,63 @@
             this.btnAdd.Image = global::Bida.Properties.Resources.add_user;
             this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAdd.Location = new System.Drawing.Point(476, 203);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(57, 36);
             this.btnAdd.TabIndex = 32;
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // btnOder
+            // 
+            this.btnOder.BackColor = System.Drawing.Color.Turquoise;
+            this.btnOder.FlatAppearance.BorderSize = 0;
+            this.btnOder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOder.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOder.ForeColor = System.Drawing.Color.White;
+            this.btnOder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnOder.Location = new System.Drawing.Point(687, 191);
+            this.btnOder.Margin = new System.Windows.Forms.Padding(4);
+            this.btnOder.Name = "btnOder";
+            this.btnOder.Size = new System.Drawing.Size(123, 36);
+            this.btnOder.TabIndex = 33;
+            this.btnOder.Text = "Thức Uống";
+            this.btnOder.UseVisualStyleBackColor = false;
+            this.btnOder.Click += new System.EventHandler(this.btnOder_Click);
+            // 
+            // txtTienOrder
+            // 
+            this.txtTienOrder.BackColor = System.Drawing.Color.White;
+            this.txtTienOrder.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTienOrder.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTienOrder.ForeColor = System.Drawing.Color.Turquoise;
+            this.txtTienOrder.Location = new System.Drawing.Point(240, 445);
+            this.txtTienOrder.Margin = new System.Windows.Forms.Padding(4);
+            this.txtTienOrder.Multiline = true;
+            this.txtTienOrder.Name = "txtTienOrder";
+            this.txtTienOrder.ReadOnly = true;
+            this.txtTienOrder.Size = new System.Drawing.Size(385, 43);
+            this.txtTienOrder.TabIndex = 37;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(20, 459);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(182, 29);
+            this.label4.TabIndex = 38;
+            this.label4.Text = "Tiền đồ uống :";
+            // 
             // frmBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 661);
+            this.ClientSize = new System.Drawing.Size(811, 661);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtTienOrder);
+            this.Controls.Add(this.btnOder);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.bttSave);
             this.Controls.Add(this.btnPay);
@@ -418,7 +465,7 @@
             this.Controls.Add(this.txtTimeStart);
             this.Controls.Add(this.lblBan);
             this.Controls.Add(this.picBan);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmBan";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Green;
@@ -457,5 +504,8 @@
         private System.Windows.Forms.Button bttSave;
         private System.Windows.Forms.BindingSource khachHangBindingSource;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Button btnOder;
+        private System.Windows.Forms.TextBox txtTienOrder;
+        private System.Windows.Forms.Label label4;
     }
 }

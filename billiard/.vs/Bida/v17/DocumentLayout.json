@@ -1,138 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\",
+  "WorkspaceRootPath": "C:\\Users\\thanh\\source\\repos\\DoAnWindow\\billiard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\frmban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\demo\\demo_bida\\billiard\\bida\\frmbienlai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmbienlai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\demo\\demo_bida\\billiard\\bida\\frmchuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmchuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\demo\\demo_bida\\billiard\\bida\\frmcreateban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmcreateban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\frmadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida.dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|solutionrelative:bida.dao\\dataprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida.dao\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|solutionrelative:bida.dao\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmmain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CB796D-1D9F-488F-9677-71C774CEEAD8}|QLHS.DTO\\Bida.DTO.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\qlhs.dto\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{E2CB796D-1D9F-488F-9677-71C774CEEAD8}|QLHS.DTO\\Bida.DTO.csproj|solutionrelative:qlhs.dto\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA57015B-2AFE-4CB8-A999-085C4D38DE0D}|Bida.BUS\\Bida.BUS.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida.bus\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{EA57015B-2AFE-4CB8-A999-085C4D38DE0D}|Bida.BUS\\Bida.BUS.csproj|solutionrelative:bida.bus\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CB796D-1D9F-488F-9677-71C774CEEAD8}|QLHS.DTO\\Bida.DTO.csproj|c:\\users\\admin\\onedrive\\m\u00E1y t\u00EDnh\\demo\\demo_bida\\billiard\\qlhs.dto\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CB796D-1D9F-488F-9677-71C774CEEAD8}|QLHS.DTO\\Bida.DTO.csproj|solutionrelative:qlhs.dto\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CB796D-1D9F-488F-9677-71C774CEEAD8}|QLHS.DTO\\Bida.DTO.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\qlhs.dto\\bienlai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CB796D-1D9F-488F-9677-71C774CEEAD8}|QLHS.DTO\\Bida.DTO.csproj|solutionrelative:qlhs.dto\\bienlai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CB796D-1D9F-488F-9677-71C774CEEAD8}|QLHS.DTO\\Bida.DTO.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\qlhs.dto\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CB796D-1D9F-488F-9677-71C774CEEAD8}|QLHS.DTO\\Bida.DTO.csproj|solutionrelative:qlhs.dto\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida.dao\\khachhangdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|solutionrelative:bida.dao\\khachhangdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida.dao\\bandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|solutionrelative:bida.dao\\bandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\frmcreateban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmcreateban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E2CB796D-1D9F-488F-9677-71C774CEEAD8}|QLHS.DTO\\Bida.DTO.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\qlhs.dto\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E2CB796D-1D9F-488F-9677-71C774CEEAD8}|QLHS.DTO\\Bida.DTO.csproj|solutionrelative:qlhs.dto\\model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\frmadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|c:\\users\\thanh\\source\\repos\\doanwindow\\billiard\\bida\\frmadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\frmban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\thanh\\source\\repos\\DoAnWindow\\billiard\\bida\\frmadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmadd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\frmbienlai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmbienlai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\thanh\\source\\repos\\DoAnWindow\\billiard\\bida\\frmorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida.dao\\nhanviendao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|solutionrelative:bida.dao\\nhanviendao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\frmchuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmchuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA57015B-2AFE-4CB8-A999-085C4D38DE0D}|Bida.BUS\\Bida.BUS.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida.bus\\khachhangbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA57015B-2AFE-4CB8-A999-085C4D38DE0D}|Bida.BUS\\Bida.BUS.csproj|solutionrelative:bida.bus\\khachhangbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA57015B-2AFE-4CB8-A999-085C4D38DE0D}|Bida.BUS\\Bida.BUS.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida.bus\\bienlaibus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA57015B-2AFE-4CB8-A999-085C4D38DE0D}|Bida.BUS\\Bida.BUS.csproj|solutionrelative:bida.bus\\bienlaibus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA57015B-2AFE-4CB8-A999-085C4D38DE0D}|Bida.BUS\\Bida.BUS.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida.bus\\banbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA57015B-2AFE-4CB8-A999-085C4D38DE0D}|Bida.BUS\\Bida.BUS.csproj|solutionrelative:bida.bus\\banbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EA57015B-2AFE-4CB8-A999-085C4D38DE0D}|Bida.BUS\\Bida.BUS.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida.bus\\nhanvienbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA57015B-2AFE-4CB8-A999-085C4D38DE0D}|Bida.BUS\\Bida.BUS.csproj|solutionrelative:bida.bus\\nhanvienbus.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida.dao\\bienlaidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|solutionrelative:bida.dao\\bienlaidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\bida\\frmban.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmban.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\thanh\\source\\repos\\DoAnWindow\\billiard\\bida\\frmorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -145,414 +29,59 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "frmMain.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmMain.cs",
-              "RelativeDocumentMoniker": "Bida\\frmMain.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmMain.cs [Design]",
-              "RelativeToolTip": "Bida\\frmMain.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T01:53:07.989Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "frmBienLai.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmBienLai.cs",
-              "RelativeDocumentMoniker": "Bida\\frmBienLai.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmBienLai.cs [Design]",
-              "RelativeToolTip": "Bida\\frmBienLai.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T07:55:44.527Z",
-              "EditorCaption": " [Design]"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "frmBan.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmBan.cs",
-              "RelativeDocumentMoniker": "Bida\\frmBan.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmBan.cs [Design]",
-              "RelativeToolTip": "Bida\\frmBan.cs [Design]",
+              "Title": "frmAdd.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DoAnWindow\\billiard\\Bida\\frmAdd.cs",
+              "RelativeDocumentMoniker": "Bida\\frmAdd.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DoAnWindow\\billiard\\Bida\\frmAdd.cs",
+              "RelativeToolTip": "Bida\\frmAdd.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T01:40:42.701Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:33:48.634Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "frmLogin.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmLogin.cs",
-              "RelativeDocumentMoniker": "Bida\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmLogin.cs [Design]",
-              "RelativeToolTip": "Bida\\frmLogin.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T02:00:36.289Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "frmChuyen.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmChuyen.cs",
-              "RelativeDocumentMoniker": "Bida\\frmChuyen.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmChuyen.cs [Design]",
-              "RelativeToolTip": "Bida\\frmChuyen.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T07:55:42.127Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "frmCreateBan.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmCreateBan.cs",
-              "RelativeDocumentMoniker": "Bida\\frmCreateBan.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmCreateBan.cs [Design]",
-              "RelativeToolTip": "Bida\\frmCreateBan.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T07:54:56.622Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "frmAdd.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmAdd.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DoAnWindow\\billiard\\Bida\\frmAdd.cs",
               "RelativeDocumentMoniker": "Bida\\frmAdd.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmAdd.cs [Design]",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DoAnWindow\\billiard\\Bida\\frmAdd.cs [Design]",
               "RelativeToolTip": "Bida\\frmAdd.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T01:56:48.978Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-24T10:33:47.277Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\App.config",
-              "RelativeDocumentMoniker": "Bida\\App.config",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\App.config",
-              "RelativeToolTip": "Bida\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-21T09:30:12.33Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "frmLogin.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmLogin.cs",
-              "RelativeDocumentMoniker": "Bida\\frmLogin.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmLogin.cs",
-              "RelativeToolTip": "Bida\\frmLogin.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAowEgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "frmOrder.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DoAnWindow\\billiard\\Bida\\frmOrder.cs",
+              "RelativeDocumentMoniker": "Bida\\frmOrder.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DoAnWindow\\billiard\\Bida\\frmOrder.cs",
+              "RelativeToolTip": "Bida\\frmOrder.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAUwCMAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T07:22:22.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:33:37.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "app.config",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.DAO\\app.config",
-              "RelativeDocumentMoniker": "Bida.DAO\\app.config",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.DAO\\app.config",
-              "RelativeToolTip": "Bida.DAO\\app.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-21T09:29:57.34Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DataProvider.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.DAO\\DataProvider.cs",
-              "RelativeDocumentMoniker": "Bida.DAO\\DataProvider.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.DAO\\DataProvider.cs",
-              "RelativeToolTip": "Bida.DAO\\DataProvider.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowC0AAAAMAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "frmOrder.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\DoAnWindow\\billiard\\Bida\\frmOrder.cs",
+              "RelativeDocumentMoniker": "Bida\\frmOrder.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\DoAnWindow\\billiard\\Bida\\frmOrder.cs [Design]",
+              "RelativeToolTip": "Bida\\frmOrder.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T09:30:52.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "frmMain.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmMain.cs",
-              "RelativeDocumentMoniker": "Bida\\frmMain.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmMain.cs",
-              "RelativeToolTip": "Bida\\frmMain.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAA4wH0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:40:22.53Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\QLHS.DTO\\App.config",
-              "RelativeDocumentMoniker": "QLHS.DTO\\App.config",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\QLHS.DTO\\App.config",
-              "RelativeToolTip": "QLHS.DTO\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-21T09:29:49.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "KHACHHANG.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\QLHS.DTO\\KHACHHANG.cs",
-              "RelativeDocumentMoniker": "QLHS.DTO\\KHACHHANG.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\QLHS.DTO\\KHACHHANG.cs",
-              "RelativeToolTip": "QLHS.DTO\\KHACHHANG.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T02:15:11.521Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "BAN.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\QLHS.DTO\\BAN.cs",
-              "RelativeDocumentMoniker": "QLHS.DTO\\BAN.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\QLHS.DTO\\BAN.cs",
-              "RelativeToolTip": "QLHS.DTO\\BAN.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAkwCsAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T02:09:47.242Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.BUS\\App.config",
-              "RelativeDocumentMoniker": "Bida.BUS\\App.config",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.BUS\\App.config",
-              "RelativeToolTip": "Bida.BUS\\App.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-10-21T09:30:05.041Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "BIENLAI.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\QLHS.DTO\\BIENLAI.cs",
-              "RelativeDocumentMoniker": "QLHS.DTO\\BIENLAI.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\QLHS.DTO\\BIENLAI.cs",
-              "RelativeToolTip": "QLHS.DTO\\BIENLAI.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAgwCYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T02:10:14.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\Program.cs",
-              "RelativeDocumentMoniker": "Bida\\Program.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\Program.cs",
-              "RelativeToolTip": "Bida\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAowA8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T03:35:29.957Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "KhachHangDAO.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.DAO\\KhachHangDAO.cs",
-              "RelativeDocumentMoniker": "Bida.DAO\\KhachHangDAO.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.DAO\\KhachHangDAO.cs",
-              "RelativeToolTip": "Bida.DAO\\KhachHangDAO.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAArwCAAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T07:01:10.682Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "frmCreateBan.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmCreateBan.cs",
-              "RelativeDocumentMoniker": "Bida\\frmCreateBan.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmCreateBan.cs",
-              "RelativeToolTip": "Bida\\frmCreateBan.cs",
-              "ViewState": "AgIAADEAAAAAAAAAAAAewEEAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:26:51.917Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "BanDAO.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.DAO\\BanDAO.cs",
-              "RelativeDocumentMoniker": "Bida.DAO\\BanDAO.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.DAO\\BanDAO.cs",
-              "RelativeToolTip": "Bida.DAO\\BanDAO.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAewCQAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:34:33.179Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "frmAdd.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmAdd.cs",
-              "RelativeDocumentMoniker": "Bida\\frmAdd.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmAdd.cs",
-              "RelativeToolTip": "Bida\\frmAdd.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAQwEQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T07:01:55.607Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Model.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\QLHS.DTO\\Model.cs",
-              "RelativeDocumentMoniker": "QLHS.DTO\\Model.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\QLHS.DTO\\Model.cs",
-              "RelativeToolTip": "QLHS.DTO\\Model.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T02:09:19.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "KhachHangBUS.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.BUS\\KhachHangBUS.cs",
-              "RelativeDocumentMoniker": "Bida.BUS\\KhachHangBUS.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.BUS\\KhachHangBUS.cs",
-              "RelativeToolTip": "Bida.BUS\\KhachHangBUS.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAcwBgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T06:46:12.905Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "frmBan.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmBan.cs",
-              "RelativeDocumentMoniker": "Bida\\frmBan.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmBan.cs",
-              "RelativeToolTip": "Bida\\frmBan.cs",
-              "ViewState": "AgIAANsAAAAAAAAAAAAowOkAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:26:40.95Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "frmBienLai.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmBienLai.cs",
-              "RelativeDocumentMoniker": "Bida\\frmBienLai.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmBienLai.cs",
-              "RelativeToolTip": "Bida\\frmBienLai.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAswCsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:26:47.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "NhanVienDAO.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.DAO\\NhanVienDAO.cs",
-              "RelativeDocumentMoniker": "Bida.DAO\\NhanVienDAO.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.DAO\\NhanVienDAO.cs",
-              "RelativeToolTip": "Bida.DAO\\NhanVienDAO.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAApwB0AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:26:19.737Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "frmChuyen.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmChuyen.cs",
-              "RelativeDocumentMoniker": "Bida\\frmChuyen.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmChuyen.cs",
-              "RelativeToolTip": "Bida\\frmChuyen.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAcwIoAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:26:49.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "BienLaiBUS.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.BUS\\BienLaiBUS.cs",
-              "RelativeDocumentMoniker": "Bida.BUS\\BienLaiBUS.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.BUS\\BienLaiBUS.cs",
-              "RelativeToolTip": "Bida.BUS\\BienLaiBUS.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAcwA4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T06:46:28.89Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "BanBUS.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.BUS\\BanBUS.cs",
-              "RelativeDocumentMoniker": "Bida.BUS\\BanBUS.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.BUS\\BanBUS.cs",
-              "RelativeToolTip": "Bida.BUS\\BanBUS.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAcwBQAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:26:22.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "NhanVienBUS.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.BUS\\NhanVienBUS.cs",
-              "RelativeDocumentMoniker": "Bida.BUS\\NhanVienBUS.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.BUS\\NhanVienBUS.cs",
-              "RelativeToolTip": "Bida.BUS\\NhanVienBUS.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAcwA4AAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:26:29.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "BienLaiDAO.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.DAO\\BienLaiDAO.cs",
-              "RelativeDocumentMoniker": "Bida.DAO\\BienLaiDAO.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida.DAO\\BienLaiDAO.cs",
-              "RelativeToolTip": "Bida.DAO\\BienLaiDAO.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:40:50.966Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "frmBan.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmBan.Designer.cs",
-              "RelativeDocumentMoniker": "Bida\\frmBan.Designer.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\OneDrive\\M\u00E1y t\u00EDnh\\Demo\\Demo_BIDA\\billiard\\Bida\\frmBan.Designer.cs",
-              "RelativeToolTip": "Bida\\frmBan.Designer.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAcwHgAAABOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-21T08:26:45.407Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T10:33:35.935Z"
             }
           ]
         },

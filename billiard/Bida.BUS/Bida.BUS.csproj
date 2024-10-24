@@ -54,6 +54,7 @@
     <Compile Include="BienLaiBUS.cs" />
     <Compile Include="KhachHangBUS.cs" />
     <Compile Include="NhanVienBUS.cs" />
+    <Compile Include="OrderBUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

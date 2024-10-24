@@ -8,7 +8,7 @@ namespace Bida.DTO
     public partial class Model : DbContext
     {
         public Model()
-            : base("name=BD")
+            : base("name=Model2")
         {
         }
 
@@ -17,6 +17,7 @@ namespace Bida.DTO
         public virtual DbSet<CHITIETBIENLAI> CHITIETBIENLAIs { get; set; }
         public virtual DbSet<KHACHHANG> KHACHHANGs { get; set; }
         public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
+        public virtual DbSet<ORDER> ORDERs { get; set; }
         public virtual DbSet<QUANLI> QUANLIs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

@@ -33,7 +33,6 @@ namespace Bida.DAO
                 var GioBD = reader.GetDateTime(4);
                 var GioKT = reader.GetDateTime(5);
 
-                // Updated instantiation of BAN
                 BAN b = new BAN(LoaiBan, KhuVuc, TinhTrang, GioBD, GioKT);
                 b.MABAN = maban;
                 if (reader.IsDBNull(6))

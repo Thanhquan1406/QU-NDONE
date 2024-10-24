@@ -17,6 +17,7 @@ namespace Bida
 
     public partial class frmBan : MetroForm
     {
+        public int TongTienOrder { get; set; }
         public BAN ban;
         public NHANVIEN nhanvien;
         public frmBan(BAN a, NHANVIEN nv)
@@ -45,9 +46,9 @@ namespace Bida
             else
             {
                 btnChange.Enabled = true;
-                if (ban.GIOBD.HasValue) // Check if GIOBD has a value
+                if (ban.GIOBD.HasValue) 
                 {
-                    var date = ban.GIOBD.Value; // Get the value of GIOBD
+                    var date = ban.GIOBD.Value;
                     int h = date.Hour;
                     int m = date.Minute;
                     txtTimeStart.Text = h + ":" + m;
@@ -67,83 +68,82 @@ namespace Bida
         }
         private void frmBan_Load(object sender, EventArgs e)
         {
-            
+            if (ban == null)
+            {
+                MessageBox.Show("Bàn object is null!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+                return;
+            }
+
+            if (nhanvien == null)
+            {
+                MessageBox.Show("Nhân viên object is null!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
+                return;
+            }
+
             lblnv.Text = nhanvien.TenNhanVien;
             var date1 = DateTime.Now;
             lblDate.Text = date1.ToString("dd/MM/yyyy");
             this.lblBan.Text = "Bàn " + ban.MABAN;
-            
-            comKH.DataSource = new KhachHangBUS().GetListKH();
 
-            comKH.SelectedIndex = ban.KHACHHANG.MAKH -1;
-          
+            comKH.DataSource = new KhachHangBUS().GetListKH();
+            if (ban.KHACHHANG != null)
+            {
+                comKH.SelectedIndex = ban.KHACHHANG.MAKH - 1;
+            }
+            else
+            {
+                MessageBox.Show("Khách hàng chưa được khởi tạo cho bàn này!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                comKH.SelectedIndex = -1;
+            }
+
+
             if (ban.TINHTRANG == false)
             {
-                 btnEnd.Enabled = false;
-                 btnStart.Enabled = true;
+                btnEnd.Enabled = false;
+                btnStart.Enabled = true;
                 btnChange.Enabled = false;
-                if (ban.LOAIBAN == false)
-                {
-                    picBan.Image = global::Bida.Properties.Resources.bidafrace;
-                }
-                else
-                {
-                    picBan.Image = global::Bida.Properties.Resources.bida;
-                }
+                picBan.Image = ban.LOAIBAN == false ? global::Bida.Properties.Resources.bidafrace : global::Bida.Properties.Resources.bida;
             }
             else
             {
                 btnChange.Enabled = true;
-                if (ban.GIOBD.HasValue) // Check if GIOBD has a value
+                if (ban.GIOBD.HasValue)
                 {
-                    var date = ban.GIOBD.Value; // Get the value of GIOBD
-                    int h = date.Hour;
-                    int m = date.Minute;
-                    txtTimeStart.Text = h + ":" + m;
+                    var date = ban.GIOBD.Value;
+                    txtTimeStart.Text = date.Hour + ":" + date.Minute;
                 }
                 txtTimeStart.Enabled = false;
                 btnStart.Enabled = false;
                 btnEnd.Enabled = true;
-                if (ban.LOAIBAN == false)
-                {
-                    picBan.Image = global::Bida.Properties.Resources.bidafrance_s;
-                }
-                else
-                {
-                    picBan.Image = global::Bida.Properties.Resources.bida_s;
-                }
+                picBan.Image = ban.LOAIBAN == false ? global::Bida.Properties.Resources.bidafrance_s : global::Bida.Properties.Resources.bida_s;
             }
         }
 
         private void btnStart_Click(object sender, EventArgs e)
         {
-            var date = DateTime.Now;//Convert.ToDateTime("11/19/2017 8:30:00.000"); 
+            var date = DateTime.Now;
             var date2 = ban.GIOBD;
-            int h= date.Hour;
+            int h = date.Hour;
             int m = date.Minute;
             txtTimeStart.Text = h + ":" + m;
             txtTimeEnd.Text = "";
             ban.TINHTRANG = true;
             ban.GIOBD = date;
             btnTinh.Enabled = false;
-            //var hours = (date - date2).TotalMinutes;
-            //txtTimeStart.Text = hours.ToString();
-            ////  txtTimeEnd.Text = date2.ToString();
 
 
-            //ban.GioBd = date;
-            
+            new BanBUS().updateBan(ban);
 
-           new BanBUS().updateBan(ban);
-
-           this.Refesh();
+            this.Refesh();
 
 
         }
 
         private void btnEnd_Click(object sender, EventArgs e)
         {
-            
+
 
             var date = DateTime.Now;
             int h = date.Hour;
@@ -173,7 +173,7 @@ namespace Bida
 
         private void metroComboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -181,23 +181,14 @@ namespace Bida
             frmChuyen a = new frmChuyen(nhanvien, ban);
             a.Show();
             this.Close();
-            //if (comKH.Text == "")
-            //{
-            //    lblBan.Text = "test" + comKH.Text;
-            //}
-            //else
-            //{
-            //    lblBan.Text = "k fai" + comKH.Text;
-
-            //}
         }
 
         private void btnTinh_Click(object sender, EventArgs e)
         {
-            if (ban.GIOBD.HasValue && ban.GIOKT.HasValue) // Check if both GIOBD and GIOKT have values
+            if (ban.GIOBD.HasValue && ban.GIOKT.HasValue) 
             {
-                DateTime date = ban.GIOBD.Value; // Get the value of GIOBD
-                DateTime date2 = ban.GIOKT.Value; // Get the value of GIOKT
+                DateTime date = ban.GIOBD.Value;
+                DateTime date2 = ban.GIOKT.Value;
                 double m = (date2 - date).TotalMinutes;
 
                 int hour = (int)(m / 60);
@@ -205,25 +196,29 @@ namespace Bida
 
                 txtGio.Text = hour + " giờ " + minute + " phút";
 
-                int gia = (int)(m * 20) / 60;
-                txtGia.Text = gia + ".000 VND";
+                int tiengio = (int)(m * 20) / 60 *1000;
+                int tongTienOrder = TongTienOrder;
+                int Total = tiengio + tongTienOrder;
+                txtTienOrder.Text = tongTienOrder.ToString();
+                txtGia.Text = Total.ToString();
+               
 
                 btnPay.Enabled = true;
             }
             else
             {
-                // Handle the case where GIOBD or GIOKT is null
                 txtGio.Text = "Không có thời gian";
-                txtGia.Text = "0.000 VND";
+                txtGia.Text = " VND";
+                txtTienOrder.Text = " VND";
                 btnPay.Enabled = false;
             }
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            
+
             int makh = comKH.SelectedValue.GetHashCode();
-            new BanBUS().updatemakh(ban,makh);
+            new BanBUS().updatemakh(ban, makh);
 
             MetroMessageBox.Show(this, "Đã thêm khách hàng vào Bàn " + ban.MABAN, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Question);
 
@@ -231,7 +226,7 @@ namespace Bida
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            frmAdd a= new frmAdd(ban, nhanvien);
+            frmAdd a = new frmAdd(ban, nhanvien);
             a.Show();
             this.Close();
         }
@@ -244,7 +239,7 @@ namespace Bida
             String thoigian = txtGio.Text;
             String gia = txtGia.Text;
 
-            BIENLAI a = new BIENLAI(nhanvien,ban,kh,ban.GIOBD,ban.GIOKT,thoigian,gia);
+            BIENLAI a = new BIENLAI(nhanvien, ban, kh, ban.GIOBD, ban.GIOKT, thoigian, gia);
 
             new BienLaiBUS().addBienLai(a);
             frmBienLai bl = new frmBienLai(a);
@@ -252,6 +247,13 @@ namespace Bida
             this.Close();
 
 
+        }
+
+        private void btnOder_Click(object sender, EventArgs e)
+        {
+            frmOrder a = new frmOrder(ban, nhanvien);
+            a.Show();
+            this.Hide();
         }
     }
 }
