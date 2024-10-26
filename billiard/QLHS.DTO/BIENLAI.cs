@@ -44,7 +44,6 @@ namespace Bida.DTO
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ORDER> ORDERs { get; set; }
-
         public BIENLAI(NHANVIEN nhanvien, BAN ban, KHACHHANG khachhang, DateTime? gioBD, DateTime? gioKT, string thoiGian, string tongTien)
         {
             NHANVIEN = nhanvien;

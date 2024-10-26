@@ -1,4 +1,4 @@
- namespace Bida.DTO
+namespace Bida.DTO
 {
     using System;
     using System.Collections.Generic;
@@ -17,13 +17,15 @@
         [StringLength(100)]
         public string TENNUOC { get; set; }
 
-        public int SOLUONG { get; set; }
+        public int SOLUONGKHO { get; set; }
 
         public int PRICE { get; set; }
 
-        public int MABAN { get; set; }
+        public int? MABAN { get; set; }
 
-        public int MABIENLAI { get; set; }
+        public int? MABIENLAI { get; set; }
+
+        public int? SOLUONGKHACHMUA { get; set; }
 
         public virtual BAN BAN { get; set; }
 

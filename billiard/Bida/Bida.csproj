@@ -175,7 +175,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\bida.png" />
+    <None Include="Resources\C.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bidafrace.png" />

@@ -8,7 +8,7 @@ namespace Bida.DTO
     public partial class Model : DbContext
     {
         public Model()
-            : base("name=Model4")
+            : base("name=Model22")
         {
         }
 
@@ -27,11 +27,6 @@ namespace Bida.DTO
                 .WithRequired(e => e.BAN)
                 .WillCascadeOnDelete(false);
 
-            modelBuilder.Entity<BAN>()
-                .HasMany(e => e.ORDERs)
-                .WithRequired(e => e.BAN)
-                .WillCascadeOnDelete(false);
-
             modelBuilder.Entity<BIENLAI>()
                 .Property(e => e.MANHANVIEN)
                 .IsUnicode(false);
@@ -42,8 +37,8 @@ namespace Bida.DTO
 
             modelBuilder.Entity<BIENLAI>()
                 .HasMany(e => e.ORDERs)
-                .WithRequired(e => e.BIENLAI)
-                .WillCascadeOnDelete(false);
+                .WithOptional(e => e.BIENLAI)
+                .HasForeignKey(e => e.MABAN);
 
             modelBuilder.Entity<CHITIETBIENLAI>()
                 .Property(e => e.MAKH)

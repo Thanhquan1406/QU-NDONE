@@ -50,3 +50,11 @@ D:\Phuc\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.CoreCompileInputs.cache
 D:\Phuc\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.Up2Date
 D:\Phuc\billiard\QLHS.DTO\obj\Debug\Bida.DTO.dll
 D:\Phuc\billiard\QLHS.DTO\obj\Debug\Bida.DTO.pdb
+C:\Users\thanh\source\repos\LAB06_mini\billiard\bin\Bida.DTO.dll.config
+C:\Users\thanh\source\repos\LAB06_mini\billiard\bin\Bida.DTO.dll
+C:\Users\thanh\source\repos\LAB06_mini\billiard\bin\Bida.DTO.pdb
+C:\Users\thanh\source\repos\LAB06_mini\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.AssemblyReference.cache
+C:\Users\thanh\source\repos\LAB06_mini\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.CoreCompileInputs.cache
+C:\Users\thanh\source\repos\LAB06_mini\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.Up2Date
+C:\Users\thanh\source\repos\LAB06_mini\billiard\QLHS.DTO\obj\Debug\Bida.DTO.dll
+C:\Users\thanh\source\repos\LAB06_mini\billiard\QLHS.DTO\obj\Debug\Bida.DTO.pdb

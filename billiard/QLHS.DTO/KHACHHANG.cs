@@ -30,7 +30,6 @@ namespace Bida.DTO
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BIENLAI> BIENLAIs { get; set; }
-
         public KHACHHANG(string tenkh, string sdt)
         {
             TENKH = tenkh;
