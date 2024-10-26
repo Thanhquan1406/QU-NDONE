@@ -58,6 +58,7 @@
     <Compile Include="KHACHHANG.cs" />
     <Compile Include="Model.cs" />
     <Compile Include="NHANVIEN.cs" />
+    <Compile Include="NUOC.cs" />
     <Compile Include="ORDER.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QUANLI.cs" />

@@ -14,7 +14,7 @@ namespace Bida.DAO
 
         public BanDAO()
         {
-            provider= new DataProvider();
+            provider = new DataProvider();
         }
 
         public List<BAN> getlstBan()
@@ -30,16 +30,16 @@ namespace Bida.DAO
                 bool LoaiBan = reader.GetBoolean(1);
                 int KhuVuc = reader.GetInt32(2);
                 bool TinhTrang = reader.GetBoolean(3);
-                var GioBD = reader.GetDateTime(4);
-                var GioKT = reader.GetDateTime(5);
+
+                // Kiểm tra nếu GIOBD là NULL
+                DateTime? GioBD = reader.IsDBNull(4) ? (DateTime?)null : reader.GetDateTime(4);
+                // Kiểm tra nếu GIOKT là NULL
+                DateTime? GioKT = reader.IsDBNull(5) ? (DateTime?)null : reader.GetDateTime(5);
 
                 BAN b = new BAN(LoaiBan, KhuVuc, TinhTrang, GioBD, GioKT);
                 b.MABAN = maban;
-                if (reader.IsDBNull(6))
-                {
-                    //nothing
-                }
-                else
+
+                if (!reader.IsDBNull(6))
                 {
                     b.KHACHHANG = new KhachHangDAO().GetKhachHangbyID(reader.GetInt32(6));
                 }
@@ -47,6 +47,7 @@ namespace Bida.DAO
             }
             return lst;
         }
+
 
         public void updateBan(BAN b)
         {
@@ -90,10 +91,10 @@ namespace Bida.DAO
 
             b.KHACHHANG = new KhachHangDAO().GetKhachHangbyID(makh);
 
-            string sql = "update ban set MAKH = "+makh+" where MABAN = " + b.MABAN;
+            string sql = "update ban set MAKH = " + makh + " where MABAN = " + b.MABAN;
             provider.executeNonQuery(sql);
         }
 
-      
+
     }
 }

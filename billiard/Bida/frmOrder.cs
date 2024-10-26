@@ -13,6 +13,7 @@ using Bida.BUS;
 using Bida.DTO;
 using MetroFramework;
 using System.Data.SqlClient;
+using System.Reflection;
 
 namespace Bida
 {
@@ -21,8 +22,9 @@ namespace Bida
         private BAN ban;
         private NHANVIEN nhanvien;
         private List<ORDER> orders;
-        private ORDER oRDER;
         private Dictionary<int, List<ORDER>> ordersByTable = new Dictionary<int, List<ORDER>>();
+        private List<NUOC> listNuoc;
+
 
         public frmOrder(BAN b, NHANVIEN n)
         {
@@ -30,149 +32,210 @@ namespace Bida
             this.ban = b;
             this.nhanvien = n;
         }
-        private void LoadDataToDataGridView()
+
+        private void frmOrder_Load(object sender, EventArgs e)
         {
-            try
+            LoadLoaiNuocToComboBox();
+            LoadDataByBan(ban.MABAN);
+        }
+        private void LoadDataByBan(int maBan)
+        {
+            using (var context = new Model())
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=LENOVO\\SQLEXPRESS01;Initial Catalog=Bida;Integrated Security=True;"))
+                // Lấy danh sách các đơn hàng theo mã bàn từ CSDL
+                var orders = context.ORDERs
+                                    .Where(o => o.MABAN == maBan)
+                                    .Select(o => new
+                                    {
+                                        TenNuoc = o.NUOC.TENNUOC,
+                                        SoLuong = o.SOLUONGKHACHMUA,
+                                        GiaTien = o.SOLUONGKHACHMUA * o.NUOC.PRICE
+                                    })
+                                    .ToList();
+
+                // Xóa các dòng cũ trong DataGridView trước khi thêm dữ liệu mới
+                dgvThucDon.Rows.Clear();
+
+                // Thêm dữ liệu vào DataGridView
+                foreach (var order in orders)
                 {
-                    conn.Open();
-                    // Sử dụng câu lệnh SQL để lấy dữ liệu từ bảng Order dựa trên MABAN của bàn đã chọn
-                    string query = "SELECT TENNUOC, PRICE, SOLUONGKHACHMUA FROM [Order] WHERE MABAN = @MABAN";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    cmd.Parameters.AddWithValue("@MABAN", ban.MABAN); // Thêm tham số MABAN vào câu truy vấn
-
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
-                    DataTable dataTable = new DataTable();
-                    dataAdapter.Fill(dataTable);
-
-                    // Gán DataTable vào DataGridView
-                    dgvThucDon.DataSource = dataTable;
+                    dgvThucDon.Rows.Add(order.TenNuoc, order.SoLuong, order.GiaTien);
+                    UpdateTotalPrice();
                 }
-            }
-            catch (Exception ex)
-            {
-                // Xử lý lỗi khi không thể kết nối hoặc truy vấn dữ liệu
-                MessageBox.Show("Lỗi khi tải dữ liệu: " + ex.Message);
             }
         }
         private void LoadLoaiNuocToComboBox()
         {
-            try
+            // Lấy dữ liệu từ cơ sở dữ liệu
+            var listNuoc = FetchDataFromDatabase();
+
+            // Gán dữ liệu cho ComboBox
+            comboLoaiNuoc.DataSource = listNuoc;
+            comboLoaiNuoc.DisplayMember = "TENNUOC"; // Hiển thị tên nước
+            comboLoaiNuoc.ValueMember = "MANUOC";    // Giá trị thực tế là mã nước (nếu cần dùng)
+        }
+
+        private List<NUOC> FetchDataFromDatabase()
+        {
+            using (var context = new Model()) // Thay Model1 bằng DbContext thực tế của bạn
             {
-                using (SqlConnection conn = new SqlConnection("Data Source=LENOVO\\SQLEXPRESS01;Initial Catalog=Bida;Integrated Security=True;"))
-                {
-                    conn.Open();
-                    string query = "SELECT TENNUOC, PRICE FROM [ORDER]"; // Giả sử bảng Loại Nước có tên là LoaiNuoc
-                    SqlCommand cmd = new SqlCommand(query, conn);
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter(cmd);
-                    DataTable dataTable = new DataTable();
-                    dataAdapter.Fill(dataTable);
-
-                    comboLoaiNuoc.DataSource = dataTable;
-                    comboLoaiNuoc.DisplayMember = "TENNUOC"; // Hiển thị tên nước
-                    comboLoaiNuoc.ValueMember = "PRICE"; // Giá nước được gán vào giá trị
-                    comboLoaiNuoc.SelectedIndex = -1; // Không chọn loại nước nào khi load form
-                    textGiaTien.Text = "0";
-
-
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi tải dữ liệu loại nước: " + ex.Message);
+                // Lấy tất cả các bản ghi từ bảng NUOC và chuyển thành danh sách
+                return context.NUOCs.ToList();
             }
         }
 
 
-        private void frmOrder_Load(object sender, EventArgs e)
+        private void LoadDataToDataGridView()
         {
 
-            LoadDataToDataGridView();
-            LoadLoaiNuocToComboBox();
         }
+
         private void button2_Click(object sender, EventArgs e)
         {
-            frmBan frmBan = new frmBan(this.ban, this.nhanvien);
-            frmBan.Show();
-            this.Close(); // Đóng frmOrder sau khi frmBan được mở
+            int tongTien = 0;
+            // Kiểm tra nếu TextBox trống hoặc giá trị không thể chuyển đổi thành số
+            if (string.IsNullOrWhiteSpace(txtTongTien.Text) || !int.TryParse(txtTongTien.Text, out tongTien))
+            {
+                tongTien = 0; // Gán giá trị tổng tiền là 0 nếu TextBox trống hoặc không hợp lệ
+            }
+
+            // Tiếp tục thoát và mở frmBan bất kể giá trị của tongTien
+            frmBan frm = new frmBan(ban, nhanvien);
+            frm.SetTongTien(tongTien);
+            frm.Show();
+            this.Close();
         }
+
+
+
 
         private void btnDat_Click(object sender, EventArgs e)
         {
-            try
+            // Lấy đối tượng nước hiện tại được chọn từ ComboBox
+            var selectedNuoc = comboLoaiNuoc.SelectedItem as NUOC;
+
+            if (selectedNuoc != null)
             {
-                // Lấy thông tin từ ComboBox và NumericUpDown
-                string tenNuoc = comboLoaiNuoc.Text;
-                if (comboLoaiNuoc.SelectedValue == null)
+                // Lấy số lượng từ NumericUpDown
+                int soLuong = (int)numSoLuong.Value;
+
+                // Tính giá tiền dựa trên số lượng và giá của loại nước
+                int giaTien = soLuong * (selectedNuoc.PRICE.HasValue ? selectedNuoc.PRICE.Value : 0);
+
+                // Kiểm tra xem loại nước đã tồn tại trong DataGridView chưa
+                bool found = false;
+                foreach (DataGridViewRow row in dgvThucDon.Rows)
                 {
-                    MessageBox.Show("Vui lòng chọn loại nước!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                    return;
+                    if (row.Cells["Column1"].Value != null && row.Cells["Column1"].Value.ToString() == selectedNuoc.TENNUOC)
+                    {
+                        // Nếu tìm thấy món đã tồn tại, cộng dồn số lượng và tính lại tổng giá tiền
+                        int currentQuantity = Convert.ToInt32(row.Cells["Column2"].Value);
+                        int newQuantity = currentQuantity + soLuong;
+                        row.Cells["Column2"].Value = newQuantity;
+
+                        int newPrice = newQuantity * (selectedNuoc.PRICE.HasValue ? selectedNuoc.PRICE.Value : 0);
+                        row.Cells["Column3"].Value = newPrice;
+
+                        found = true;
+                        break;
+                    }
                 }
 
-                decimal giaTien = Convert.ToDecimal(comboLoaiNuoc.SelectedValue);
-                int soLuongMua = (int)mudSLMua.Value;
+                // Nếu món chưa tồn tại, thêm dòng mới
+                if (!found)
+                {
+                    dgvThucDon.Rows.Add(selectedNuoc.TENNUOC, soLuong, giaTien);
+                }
 
-                // Tính tổng tiền
-                decimal tongTien = giaTien * soLuongMua;
+                // Cập nhật tổng tiền
+                UpdateTotalPrice();
 
-                // Tạo đối tượng ORDER để lưu thông tin đơn hàng
+                // Lưu vào CSDL
+                LuuDonHangVaoCSDL(selectedNuoc.MANUOC, soLuong, giaTien);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn loại nước.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+
+        private void LuuDonHangVaoCSDL(int maNuoc, int soLuong, int giaTien)
+        {
+            using (var context = new Model()) // Thay Model1 bằng DbContext thực tế của bạn
+            {
+                // Lấy giá trị MADV tiếp theo (giả sử bạn có logic để lấy giá trị này)
+                int nextMADV = context.ORDERs.Any() ? context.ORDERs.Max(o => o.MADV) + 1 : 1;
+
+                // Tạo một đối tượng ORDER mới để lưu vào CSDL
                 ORDER newOrder = new ORDER
                 {
-                    TENNUOC = tenNuoc,
-                    PRICE = (int)giaTien,
-                    SOLUONGKHACHMUA = soLuongMua,
-                    MABAN = ban.MABAN,
-                    M
+                    MADV = nextMADV,
+                    MANUOC = maNuoc,
+                    SOLUONGKHACHMUA = soLuong,
+                    // Bạn có thể thêm mã bàn và mã biên lai nếu cần
+                     MABAN = this.ban.MABAN,
+                    // MABIENLAI = <giá trị tương ứng>,
                 };
 
-                // Lưu đơn hàng vào cơ sở dữ liệu
-                LuuDonHangVaoCSDL(newOrder);
+                // Thêm đối tượng mới vào context
+                context.ORDERs.Add(newOrder);
 
-                // Thông báo thành công
-                MessageBox.Show("Đơn hàng đã được lưu thành công!", "Thông báo");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi khi lưu đơn hàng: " + ex.Message);
-            }
-        }
-
-
-        private void LuuDonHangVaoCSDL(ORDER order)
-        {
-            try
-            {
-                using (SqlConnection conn = new SqlConnection("Data Source=LENOVO\\SQLEXPRESS01;Initial Catalog=Bida;Integrated Security=True;"))
+                try
                 {
-                    conn.Open();
-                    // Câu lệnh SQL để thêm đơn hàng vào cơ sở dữ liệu
-                    string query = "INSERT INTO [Order] (TENNUOC, PRICE, SOLUONGKHACHMUA, MABAN) VALUES (@TENNUOC, @PRICE, @SOLUONGKHACHMUA, @MABAN)";
-                    SqlCommand cmd = new SqlCommand(query, conn);
-
-                    // Thêm các tham số vào câu lệnh SQL
-                    cmd.Parameters.AddWithValue("@TENNUOC", order.TENNUOC);
-                    cmd.Parameters.AddWithValue("@PRICE", order.PRICE);
-                    cmd.Parameters.AddWithValue("@SOLUONGKHACHMUA", order.SOLUONGKHACHMUA);
-                    cmd.Parameters.AddWithValue("@MABAN", order.MABAN);
-
-                    // Thực thi câu lệnh
-                    cmd.ExecuteNonQuery();
+                    // Lưu các thay đổi vào CSDL
+                    context.SaveChanges();
+                    MessageBox.Show("Đơn hàng đã được lưu thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Lỗi khi lưu đơn hàng: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
-            catch (Exception ex)
+        }
+        private void UpdateTotalPrice()
+        {
+            int totalPrice = 0;
+
+            // Kiểm tra nếu DataGridView có cột "Column3" hay không
+            if (dgvThucDon.Columns.Contains("Column3"))
             {
-                string errorMessage = ex.InnerException != null ? ex.InnerException.Message : ex.Message;
-                MessageBox.Show("Lỗi khi lưu đơn hàng vào cơ sở dữ liệu: " + errorMessage);
+                // Duyệt qua tất cả các dòng trong DataGridView để tính tổng giá tiền
+                foreach (DataGridViewRow row in dgvThucDon.Rows)
+                {
+                    // Kiểm tra nếu ô trong cột "Column3" có giá trị hợp lệ và không phải là dòng mới
+                    if (row.Cells["Column3"].Value != null && !row.IsNewRow)
+                    {
+                        int price;
+                        // Kiểm tra nếu giá trị có thể chuyển đổi thành số nguyên
+                        if (int.TryParse(row.Cells["Column3"].Value.ToString(), out price))
+                        {
+                            totalPrice += price;
+                        }
+                    }
+                }
+
+                // Hiển thị tổng giá tiền trong TextBox
+                txtTongTien.Text = totalPrice.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Cột 'Giá Tiền' không tồn tại trong DataGridView.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
 
 
         private void comboLoaiNuoc_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboLoaiNuoc.SelectedValue != null)
+            // Lấy đối tượng nước hiện tại được chọn từ ComboBox
+            var selectedNuoc = comboLoaiNuoc.SelectedItem as NUOC;
+
+            if (selectedNuoc != null)
             {
-                textGiaTien.Text = comboLoaiNuoc.SelectedValue.ToString(); // Cập nhật giá tiền dựa trên loại nước đã chọn
+                // Hiển thị giá tiền của loại nước được chọn vào txtGiaTien
+                txtGiaTien.Text = selectedNuoc.PRICE.HasValue ? selectedNuoc.PRICE.Value.ToString() : "0";
             }
         }
     }

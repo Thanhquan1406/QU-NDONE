@@ -35,18 +35,21 @@ namespace Bida
             this.dgvThucDon = new System.Windows.Forms.DataGridView();
             this.txtTongTien = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
-            this.mudSLMua = new System.Windows.Forms.NumericUpDown();
+            this.numSoLuong = new System.Windows.Forms.NumericUpDown();
             this.label2 = new System.Windows.Forms.Label();
-            this.textGiaTien = new System.Windows.Forms.TextBox();
+            this.txtGiaTien = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboLoaiNuoc = new System.Windows.Forms.ComboBox();
             this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.btnDat = new System.Windows.Forms.Button();
-            this.comboLoaiNuoc = new System.Windows.Forms.ComboBox();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThucDon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mudSLMua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,6 +67,10 @@ namespace Bida
             // dgvThucDon
             // 
             this.dgvThucDon.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvThucDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3});
             this.dgvThucDon.Location = new System.Drawing.Point(348, 75);
             this.dgvThucDon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvThucDon.Name = "dgvThucDon";
@@ -71,7 +78,7 @@ namespace Bida
             this.dgvThucDon.RowTemplate.Height = 24;
             this.dgvThucDon.Size = new System.Drawing.Size(555, 303);
             this.dgvThucDon.TabIndex = 4;
-            
+            // 
             // txtTongTien
             // 
             this.txtTongTien.Location = new System.Drawing.Point(708, 434);
@@ -95,13 +102,18 @@ namespace Bida
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // mudSLMua
+            // numSoLuong
             // 
-            this.mudSLMua.Location = new System.Drawing.Point(135, 139);
-            this.mudSLMua.Margin = new System.Windows.Forms.Padding(4);
-            this.mudSLMua.Name = "mudSLMua";
-            this.mudSLMua.Size = new System.Drawing.Size(143, 22);
-            this.mudSLMua.TabIndex = 33;
+            this.numSoLuong.Location = new System.Drawing.Point(135, 139);
+            this.numSoLuong.Margin = new System.Windows.Forms.Padding(4);
+            this.numSoLuong.Name = "numSoLuong";
+            this.numSoLuong.Size = new System.Drawing.Size(143, 22);
+            this.numSoLuong.TabIndex = 33;
+            this.numSoLuong.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
             // 
             // label2
             // 
@@ -113,13 +125,13 @@ namespace Bida
             this.label2.TabIndex = 34;
             this.label2.Text = "Số lượng mua";
             // 
-            // textGiaTien
+            // txtGiaTien
             // 
-            this.textGiaTien.Location = new System.Drawing.Point(135, 92);
-            this.textGiaTien.Margin = new System.Windows.Forms.Padding(4);
-            this.textGiaTien.Name = "textGiaTien";
-            this.textGiaTien.Size = new System.Drawing.Size(141, 22);
-            this.textGiaTien.TabIndex = 35;
+            this.txtGiaTien.Location = new System.Drawing.Point(135, 92);
+            this.txtGiaTien.Margin = new System.Windows.Forms.Padding(4);
+            this.txtGiaTien.Name = "txtGiaTien";
+            this.txtGiaTien.Size = new System.Drawing.Size(141, 22);
+            this.txtGiaTien.TabIndex = 35;
             // 
             // label3
             // 
@@ -145,10 +157,10 @@ namespace Bida
             // 
             this.groupBox1.Controls.Add(this.comboLoaiNuoc);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.mudSLMua);
+            this.groupBox1.Controls.Add(this.numSoLuong);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.textGiaTien);
+            this.groupBox1.Controls.Add(this.txtGiaTien);
             this.groupBox1.Location = new System.Drawing.Point(16, 138);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
@@ -157,6 +169,15 @@ namespace Bida
             this.groupBox1.TabIndex = 39;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin";
+            // 
+            // comboLoaiNuoc
+            // 
+            this.comboLoaiNuoc.FormattingEnabled = true;
+            this.comboLoaiNuoc.Location = new System.Drawing.Point(135, 40);
+            this.comboLoaiNuoc.Name = "comboLoaiNuoc";
+            this.comboLoaiNuoc.Size = new System.Drawing.Size(121, 24);
+            this.comboLoaiNuoc.TabIndex = 43;
+            this.comboLoaiNuoc.SelectedIndexChanged += new System.EventHandler(this.comboLoaiNuoc_SelectedIndexChanged);
             // 
             // metroContextMenu1
             // 
@@ -185,14 +206,26 @@ namespace Bida
             this.btnDat.UseVisualStyleBackColor = true;
             this.btnDat.Click += new System.EventHandler(this.btnDat_Click);
             // 
-            // comboLoaiNuoc
+            // Column1
             // 
-            this.comboLoaiNuoc.FormattingEnabled = true;
-            this.comboLoaiNuoc.Location = new System.Drawing.Point(135, 40);
-            this.comboLoaiNuoc.Name = "comboLoaiNuoc";
-            this.comboLoaiNuoc.Size = new System.Drawing.Size(121, 24);
-            this.comboLoaiNuoc.TabIndex = 43;
-            this.comboLoaiNuoc.SelectedIndexChanged += new System.EventHandler(this.comboLoaiNuoc_SelectedIndexChanged);
+            this.Column1.HeaderText = "Tên Nước";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Số Lượng";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Giá Tiền";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
             // 
             // frmOrder
             // 
@@ -212,7 +245,7 @@ namespace Bida
             this.TransparencyKey = System.Drawing.Color.Black;
             this.Load += new System.EventHandler(this.frmOrder_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvThucDon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mudSLMua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -225,9 +258,9 @@ namespace Bida
         private System.Windows.Forms.DataGridView dgvThucDon;
         private System.Windows.Forms.TextBox txtTongTien;
         private Button button2;
-        private NumericUpDown mudSLMua;
+        private NumericUpDown numSoLuong;
         private Label label2;
-        private TextBox textGiaTien;
+        private TextBox txtGiaTien;
         private Label label3;
         private Label label4;
         private GroupBox groupBox1;
@@ -235,5 +268,8 @@ namespace Bida
         private Label label5;
         private Button btnDat;
         private ComboBox comboLoaiNuoc;
+        private DataGridViewTextBoxColumn Column1;
+        private DataGridViewTextBoxColumn Column2;
+        private DataGridViewTextBoxColumn Column3;
     }
 }

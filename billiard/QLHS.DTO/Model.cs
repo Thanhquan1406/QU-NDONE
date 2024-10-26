@@ -8,7 +8,7 @@ namespace Bida.DTO
     public partial class Model : DbContext
     {
         public Model()
-            : base("name=Model22")
+            : base("name=Model9")
         {
         }
 
@@ -17,6 +17,7 @@ namespace Bida.DTO
         public virtual DbSet<CHITIETBIENLAI> CHITIETBIENLAIs { get; set; }
         public virtual DbSet<KHACHHANG> KHACHHANGs { get; set; }
         public virtual DbSet<NHANVIEN> NHANVIENs { get; set; }
+        public virtual DbSet<NUOC> NUOCs { get; set; }
         public virtual DbSet<ORDER> ORDERs { get; set; }
         public virtual DbSet<QUANLI> QUANLIs { get; set; }
 
@@ -34,11 +35,6 @@ namespace Bida.DTO
             modelBuilder.Entity<BIENLAI>()
                 .Property(e => e.TONGTIEN)
                 .IsFixedLength();
-
-            modelBuilder.Entity<BIENLAI>()
-                .HasMany(e => e.ORDERs)
-                .WithOptional(e => e.BIENLAI)
-                .HasForeignKey(e => e.MABAN);
 
             modelBuilder.Entity<CHITIETBIENLAI>()
                 .Property(e => e.MAKH)

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.metroPanel1 = new MetroFramework.Controls.MetroPanel();
+            this.label13 = new System.Windows.Forms.Label();
             this.lblthoigan = new System.Windows.Forms.Label();
             this.lblGiokt = new System.Windows.Forms.Label();
             this.lblGiobd = new System.Windows.Forms.Label();
@@ -49,7 +50,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.metroPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +86,16 @@
             this.metroPanel1.VerticalScrollbarHighlightOnWheel = false;
             this.metroPanel1.VerticalScrollbarSize = 13;
             this.metroPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.metroPanel1_Paint);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(180, 459);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(233, 22);
+            this.label13.TabIndex = 17;
+            this.label13.Text = "Passwifi: chobonemquamon";
             // 
             // lblthoigan
             // 
@@ -230,9 +240,9 @@
             this.label7.Location = new System.Drawing.Point(13, 352);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(233, 41);
+            this.label7.Size = new System.Drawing.Size(178, 41);
             this.label7.TabIndex = 7;
-            this.label7.Text = "Tổng tiền giờ : ";
+            this.label7.Text = "Tổng tiền : ";
             // 
             // label4
             // 
@@ -322,16 +332,6 @@
             this.label8.Size = new System.Drawing.Size(180, 36);
             this.label8.TabIndex = 28;
             this.label8.Text = "In hóa đơn";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(180, 459);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(233, 22);
-            this.label13.TabIndex = 17;
-            this.label13.Text = "Passwifi: chobonemquamon";
             // 
             // frmBienLai
             // 

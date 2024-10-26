@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|c:\\users\\thanh\\source\\repos\\lab06_mini\\billiard\\bida\\frmorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|c:\\users\\thanh\\source\\repos\\lab06_mini\\billiard\\bida\\frmorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|c:\\users\\thanh\\source\\repos\\lab06_mini\\billiard\\bida\\frmban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\bida\\frmban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|c:\\users\\thanh\\source\\repos\\lab06_mini\\billiard\\bida\\frmban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\bida\\frmorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37555543-54F5-44CF-951C-AA9E262C99B8}|Bida\\Bida.csproj|solutionrelative:bida\\frmorder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\bida.dao\\bandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{85F2BBA3-21D9-4D77-9EDD-F7DEDCAA6B5B}|Bida.DAO\\Bida.DAO.csproj|solutionrelative:bida.dao\\bandao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,32 +26,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 319,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "frmOrder.cs",
               "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\Bida\\frmOrder.cs",
               "RelativeDocumentMoniker": "Bida\\frmOrder.cs",
-              "ToolTip": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\Bida\\frmOrder.cs*",
-              "RelativeToolTip": "Bida\\frmOrder.cs*",
-              "ViewState": "AgIAAHEAAAAAAAAAAAAswH0AAAAlAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\Bida\\frmOrder.cs",
+              "RelativeToolTip": "Bida\\frmOrder.cs",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAUwKAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T12:56:27.437Z",
+              "WhenOpened": "2024-10-26T16:22:38.887Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "frmOrder.cs [Design]",
               "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\Bida\\frmOrder.cs",
               "RelativeDocumentMoniker": "Bida\\frmOrder.cs",
-              "ToolTip": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\Bida\\frmOrder.cs [Design]*",
-              "RelativeToolTip": "Bida\\frmOrder.cs [Design]*",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\Bida\\frmOrder.cs [Design]",
+              "RelativeToolTip": "Bida\\frmOrder.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T12:56:20.148Z",
+              "WhenOpened": "2024-10-26T16:22:34.494Z",
               "IsPinned": true,
               "EditorCaption": " [Design]"
             },
@@ -66,27 +66,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "frmBan.cs",
-              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\Bida\\frmBan.cs",
-              "RelativeDocumentMoniker": "Bida\\frmBan.cs",
-              "ToolTip": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\Bida\\frmBan.cs",
-              "RelativeToolTip": "Bida\\frmBan.cs",
-              "ViewState": "AgIAAN8AAAAAAAAAAADwv/AAAAAWAAAAAAAAAA==",
+              "Title": "BanDAO.cs",
+              "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\Bida.DAO\\BanDAO.cs",
+              "RelativeDocumentMoniker": "Bida.DAO\\BanDAO.cs",
+              "ToolTip": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\Bida.DAO\\BanDAO.cs",
+              "RelativeToolTip": "Bida.DAO\\BanDAO.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAADwvzEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T12:56:46.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-26T17:39:43.367Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "frmBan.cs [Design]",
               "DocumentMoniker": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\Bida\\frmBan.cs",
               "RelativeDocumentMoniker": "Bida\\frmBan.cs",
               "ToolTip": "C:\\Users\\thanh\\source\\repos\\LAB06_mini\\billiard\\Bida\\frmBan.cs [Design]",
               "RelativeToolTip": "Bida\\frmBan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-26T12:56:44.34Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-26T16:55:23.386Z"
             }
           ]
         },

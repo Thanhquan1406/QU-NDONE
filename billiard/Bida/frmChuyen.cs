@@ -46,11 +46,8 @@ namespace Bida
                 BAN ban2 = a[i];
                 if (ban2.KHUVUC == 1)
                 {
-
                     System.Windows.Forms.Button btn = new System.Windows.Forms.Button();
-
                     this.Tab1.Controls.Add(btn);
-
 
                     btn.BackColor = System.Drawing.Color.White;
                     btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -87,29 +84,77 @@ namespace Bida
                         }
                     }
 
-
                     btn.Click += (s, e) =>
                     {
-                        //Thread t = new Thread(() => showFormBan(ban,nhanvien));
-                        //t.Start();
-                        //t.Join();
-
                         if (ban2.TINHTRANG == true)
                         {
-                            MetroMessageBox.Show(this, "Bàn " + ban2.MABAN + " đang được người khác chơi vui lòng chọn bàn khác ! ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                            MetroMessageBox.Show(this, "Bàn " + ban2.MABAN + " đang được người khác chơi vui lòng chọn bàn khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Question);
                         }
                         else
                         {
-                            new BanBUS().chuyenban(ban, ban2);
+                            using (var context = new Model())
+                            {
+                                // Cập nhật trạng thái và thông tin bàn cũ và bàn mới
+                                var banCu = context.BANs.Find(ban.MABAN);
+                                var banMoi = context.BANs.Find(ban2.MABAN);
 
-                            DialogResult dialogResult = MetroMessageBox.Show(this, "Bạn đã chuyễn bàn thành công ! ", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                                if (banCu == null || banMoi == null)
+                                {
+                                    MessageBox.Show("Không tìm thấy thông tin bàn.", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                    return;
+                                }
 
-                            frmBan frm = new frmBan(ban2, nhanvien);
-                            frm.Show();
-                            this.Close();
+                                // Tìm khách hàng liên quan đến bàn cũ
+                                var khachHangCu = context.KHACHHANGs.Find(banCu.MAKH);
 
+                                // Cập nhật khách hàng cho bàn mới nếu có khách hàng liên quan đến bàn cũ
+                                if (khachHangCu != null)
+                                {
+                                    banMoi.MAKH = khachHangCu.MAKH; // Gán mã khách hàng cho bàn mới
+                                    context.Entry(banMoi).State = System.Data.Entity.EntityState.Modified;
+                                }
+                                else
+                                {
+                                    // Nếu không có khách hàng, đặt MAKH của bàn mới về null (nếu cấu trúc cho phép)
+                                    banMoi.MAKH = null;
+                                }
+
+                                // Cập nhật trạng thái của bàn cũ và bàn mới
+                                banCu.TINHTRANG = false;
+                                banMoi.TINHTRANG = true;
+                                context.Entry(banCu).State = System.Data.Entity.EntityState.Modified;
+                                context.Entry(banMoi).State = System.Data.Entity.EntityState.Modified;
+
+                                // Cập nhật mã bàn cho các đơn hàng liên quan
+                                var ordersToUpdate = context.ORDERs.Where(o => o.MABAN == banCu.MABAN).ToList();
+                                foreach (var order in ordersToUpdate)
+                                {
+                                    order.MABAN = banMoi.MABAN; // Gán mã bàn mới
+                                    context.Entry(order).State = System.Data.Entity.EntityState.Modified;
+                                }
+
+                                try
+                                {
+                                    context.SaveChanges();
+                                    MetroMessageBox.Show(this, "Bạn đã chuyển bàn thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Question);
+
+                                    // Hiển thị frmBan cho bàn mới
+                                    frmBan frm = new frmBan(banMoi, nhanvien);
+                                    frm.Show();
+                                    this.Close();
+                                }
+                                catch (Exception ex)
+                                {
+                                    MessageBox.Show($"Lỗi khi chuyển bàn: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                }
+                            }
                         }
                     };
+
+
+
+
+
                     if (r > 0)
                     {
                         btn.Left = c * 120;
@@ -119,7 +164,6 @@ namespace Bida
                     }
                     else
                     {
-
                         r = 6;
                         d++;
                         c = 0;
@@ -128,13 +172,13 @@ namespace Bida
                         btn.Top = d * 150;
                         r--;
                     }
-
                 }
             }
         }
 
 
-    
+
+
 
 
         private void btnBack_Click(object sender, EventArgs e)
