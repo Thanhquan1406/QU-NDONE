@@ -13,6 +13,7 @@ namespace Bida.DTO
         public BAN()
         {
             BIENLAIs = new HashSet<BIENLAI>();
+            ORDERs = new HashSet<ORDER>();
         }
 
         [Key]
@@ -34,6 +35,10 @@ namespace Bida.DTO
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BIENLAI> BIENLAIs { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ORDER> ORDERs { get; set; }
+
         public BAN(bool? loaiBan, int? khuVuc, bool? tinhTrang, DateTime? gioBD, DateTime? gioKT)
         {
             LOAIBAN = loaiBan;
@@ -42,6 +47,6 @@ namespace Bida.DTO
             GIOBD = gioBD;
             GIOKT = gioKT;
             BIENLAIs = new HashSet<BIENLAI>();
-        }
+        } 
     }
 }

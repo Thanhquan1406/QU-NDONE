@@ -36,3 +36,11 @@ D:\New folder\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.CoreCompileInputs.cach
 D:\New folder\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.Up2Date
 D:\New folder\billiard\Bida.DAO\obj\Debug\Bida.DAO.dll
 D:\New folder\billiard\Bida.DAO\obj\Debug\Bida.DAO.pdb
+D:\Project\LAB01\BOCUOCDOI\billiard\bin\Bida.DAO.dll.config
+D:\Project\LAB01\BOCUOCDOI\billiard\bin\Bida.DAO.dll
+D:\Project\LAB01\BOCUOCDOI\billiard\bin\Bida.DAO.pdb
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.AssemblyReference.cache
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.CoreCompileInputs.cache
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.Up2Date
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida.DAO\obj\Debug\Bida.DAO.dll
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida.DAO\obj\Debug\Bida.DAO.pdb

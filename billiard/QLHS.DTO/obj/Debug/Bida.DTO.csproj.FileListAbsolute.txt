@@ -34,3 +34,11 @@ D:\New folder\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.CoreCompileInputs.cach
 D:\New folder\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.Up2Date
 D:\New folder\billiard\QLHS.DTO\obj\Debug\Bida.DTO.dll
 D:\New folder\billiard\QLHS.DTO\obj\Debug\Bida.DTO.pdb
+D:\Project\LAB01\BOCUOCDOI\billiard\bin\Bida.DTO.dll.config
+D:\Project\LAB01\BOCUOCDOI\billiard\bin\Bida.DTO.dll
+D:\Project\LAB01\BOCUOCDOI\billiard\bin\Bida.DTO.pdb
+D:\Project\LAB01\BOCUOCDOI\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.AssemblyReference.cache
+D:\Project\LAB01\BOCUOCDOI\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.CoreCompileInputs.cache
+D:\Project\LAB01\BOCUOCDOI\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.Up2Date
+D:\Project\LAB01\BOCUOCDOI\billiard\QLHS.DTO\obj\Debug\Bida.DTO.dll
+D:\Project\LAB01\BOCUOCDOI\billiard\QLHS.DTO\obj\Debug\Bida.DTO.pdb

@@ -82,3 +82,21 @@ D:\New folder\billiard\Bida\obj\Debug\Bida.csproj.CoreCompileInputs.cache
 D:\New folder\billiard\Bida\obj\Debug\Bida.csproj.Up2Date
 D:\New folder\billiard\Bida\obj\Debug\Bida.exe
 D:\New folder\billiard\Bida\obj\Debug\Bida.pdb
+D:\Project\LAB01\BOCUOCDOI\billiard\bin\Bida.exe.config
+D:\Project\LAB01\BOCUOCDOI\billiard\bin\Bida.exe
+D:\Project\LAB01\BOCUOCDOI\billiard\bin\Bida.pdb
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.csproj.AssemblyReference.cache
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.frmAdd.resources
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.frmBan.resources
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.frmBienLai.resources
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.frmChuyen.resources
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.frmCreateBan.resources
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.frmMain.resources
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.frmLogin.resources
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.frmOrder.resources
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.Properties.Resources.resources
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.csproj.GenerateResource.cache
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.csproj.CoreCompileInputs.cache
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.csproj.Up2Date
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.exe
+D:\Project\LAB01\BOCUOCDOI\billiard\Bida\obj\Debug\Bida.pdb
