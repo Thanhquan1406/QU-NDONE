@@ -31,15 +31,15 @@ namespace Bida
         }
         private void frmOrder_Load(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=DESKTOP-PEH7GUJ\\SQLEXPRESS;Initial Catalog=Bida;Integrated Security=True";
-            string query = "SELECT MADV, TENNUOC, PRICE, MABAN FROM [ORDER]"; // Include MABAN in the query
+            string connectionString = "Data Source=DLONG\\SQLEXPRESS;;Initial Catalog=Bida;Integrated Security=True";
+           // string connectionString = "Data Source=DESKTOP-PEH7GUJ\\SQLEXPRESS;Initial Catalog=Bida;Integrated Security=True";
+            string query = "SELECT MADV, TENNUOC, PRICE, MABAN, MABIENLAI FROM [ORDER]"; // Include MABAN in the query
 
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
                 try
                 {
                     connection.Open();
-                    MessageBox.Show("Kết nối thành công!");
                     SqlDataAdapter dataAdapter = new SqlDataAdapter(query, connection);
                     DataTable dataTable = new DataTable();
                     dataAdapter.Fill(dataTable);

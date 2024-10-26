@@ -31,10 +31,10 @@
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
             this.lblNV = new MetroFramework.Controls.MetroLabel();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroTabControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -55,7 +55,6 @@
             // 
             // metroTabPage1
             // 
-            this.metroTabPage1.AutoScroll = true;
             this.metroTabPage1.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.metroTabPage1.ForeColor = System.Drawing.Color.Black;
             this.metroTabPage1.HorizontalScrollbar = true;
@@ -88,30 +87,6 @@
             this.lblNV.Text = "Nhân Viên";
             this.lblNV.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.White;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Image = global::Bida.Properties.Resources.create;
-            this.btnAdd.Location = new System.Drawing.Point(928, 78);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(56, 47);
-            this.btnAdd.TabIndex = 22;
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Bida.Properties.Resources.user11;
-            this.pictureBox1.Location = new System.Drawing.Point(845, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 39);
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -137,6 +112,30 @@
             this.btnBack.TabIndex = 24;
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.BackColor = System.Drawing.Color.White;
+            this.btnAdd.FlatAppearance.BorderSize = 0;
+            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdd.Image = global::Bida.Properties.Resources.create;
+            this.btnAdd.Location = new System.Drawing.Point(928, 78);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(56, 47);
+            this.btnAdd.TabIndex = 22;
+            this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Bida.Properties.Resources.user11;
+            this.pictureBox1.Location = new System.Drawing.Point(845, 21);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(41, 39);
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
             // frmMain
             // 

@@ -52,7 +52,6 @@ namespace Bida
 
                     this.metroTabPage1.Controls.Add(btn);
 
-
                     btn.BackColor = System.Drawing.Color.White;
                     btn.FlatAppearance.BorderColor = System.Drawing.Color.White;
                     btn.FlatAppearance.BorderSize = 0;
@@ -123,8 +122,6 @@ namespace Bida
         }
         
         
-     
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             frmCreateBan a = new frmCreateBan(nhanvien);

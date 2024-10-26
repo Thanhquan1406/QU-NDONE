@@ -43,3 +43,11 @@ D:\Project\LAB01\BOCUOCDOI\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.CoreCompi
 D:\Project\LAB01\BOCUOCDOI\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.Up2Date
 D:\Project\LAB01\BOCUOCDOI\billiard\Bida.BUS\obj\Debug\Bida.BUS.dll
 D:\Project\LAB01\BOCUOCDOI\billiard\Bida.BUS\obj\Debug\Bida.BUS.pdb
+D:\Phuc\billiard\bin\Bida.BUS.dll.config
+D:\Phuc\billiard\bin\Bida.BUS.dll
+D:\Phuc\billiard\bin\Bida.BUS.pdb
+D:\Phuc\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.AssemblyReference.cache
+D:\Phuc\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.CoreCompileInputs.cache
+D:\Phuc\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.Up2Date
+D:\Phuc\billiard\Bida.BUS\obj\Debug\Bida.BUS.dll
+D:\Phuc\billiard\Bida.BUS\obj\Debug\Bida.BUS.pdb
