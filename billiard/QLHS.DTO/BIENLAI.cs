@@ -38,12 +38,12 @@ namespace Bida.DTO
 
         public virtual BAN BAN { get; set; }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ORDER> ORDERs { get; set; }
+
         public virtual KHACHHANG KHACHHANG { get; set; }
 
         public virtual NHANVIEN NHANVIEN { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ORDER> ORDERs { get; set; }
         public BIENLAI(NHANVIEN nhanvien, BAN ban, KHACHHANG khachhang, DateTime? gioBD, DateTime? gioKT, string thoiGian, string tongTien)
         {
             NHANVIEN = nhanvien;

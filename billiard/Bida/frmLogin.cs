@@ -33,7 +33,6 @@ namespace Bida
             frm.ShowDialog();
         }
       
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string user = txtUser.Text;
@@ -68,6 +67,11 @@ namespace Bida
                     this.Close();
                 }
             }
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

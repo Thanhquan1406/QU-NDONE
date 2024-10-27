@@ -236,7 +236,7 @@
             this.btnPay.FlatAppearance.BorderSize = 0;
             this.btnPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPay.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPay.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnPay.ForeColor = System.Drawing.Color.Black;
             this.btnPay.Image = global::Bida.Properties.Resources.dollar_flat;
             this.btnPay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPay.Location = new System.Drawing.Point(675, 484);
@@ -255,7 +255,7 @@
             this.btnChange.FlatAppearance.BorderSize = 0;
             this.btnChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnChange.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChange.ForeColor = System.Drawing.Color.White;
+            this.btnChange.ForeColor = System.Drawing.Color.Black;
             this.btnChange.Image = global::Bida.Properties.Resources.exchange;
             this.btnChange.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnChange.Location = new System.Drawing.Point(759, 78);
@@ -275,6 +275,7 @@
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
@@ -299,7 +300,7 @@
             this.btnTinh.FlatAppearance.BorderSize = 0;
             this.btnTinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTinh.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTinh.ForeColor = System.Drawing.Color.White;
+            this.btnTinh.ForeColor = System.Drawing.Color.Black;
             this.btnTinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTinh.Location = new System.Drawing.Point(444, 312);
             this.btnTinh.Margin = new System.Windows.Forms.Padding(4);
@@ -317,8 +318,8 @@
             this.btnEnd.FlatAppearance.BorderSize = 0;
             this.btnEnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEnd.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEnd.ForeColor = System.Drawing.Color.White;
-            this.btnEnd.Image = global::Bida.Properties.Resources.end;
+            this.btnEnd.ForeColor = System.Drawing.Color.Black;
+
             this.btnEnd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEnd.Location = new System.Drawing.Point(240, 313);
             this.btnEnd.Margin = new System.Windows.Forms.Padding(4);
@@ -336,7 +337,7 @@
             this.btnStart.FlatAppearance.BorderSize = 0;
             this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnStart.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStart.ForeColor = System.Drawing.Color.White;
+            this.btnStart.ForeColor = System.Drawing.Color.Black;
             this.btnStart.Image = global::Bida.Properties.Resources.play;
             this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStart.Location = new System.Drawing.Point(240, 256);
@@ -364,7 +365,7 @@
             this.bttSave.FlatAppearance.BorderSize = 0;
             this.bttSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.bttSave.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bttSave.ForeColor = System.Drawing.Color.White;
+            this.bttSave.ForeColor = System.Drawing.Color.Black;
             this.bttSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bttSave.Location = new System.Drawing.Point(541, 203);
             this.bttSave.Margin = new System.Windows.Forms.Padding(4);
@@ -398,7 +399,7 @@
             this.btnOder.FlatAppearance.BorderSize = 0;
             this.btnOder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOder.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnOder.ForeColor = System.Drawing.Color.White;
+            this.btnOder.ForeColor = System.Drawing.Color.Black;
             this.btnOder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnOder.Location = new System.Drawing.Point(759, 203);
             this.btnOder.Margin = new System.Windows.Forms.Padding(4);

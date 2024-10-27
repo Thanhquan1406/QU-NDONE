@@ -81,6 +81,9 @@ namespace Bida
             this.Close();
         }
 
-       
+        private void comRe_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -28,16 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCreateBan));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comRe = new MetroFramework.Controls.MetroComboBox();
             this.comtype = new MetroFramework.Controls.MetroComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblnv = new MetroFramework.Controls.MetroLabel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.comRe = new MetroFramework.Controls.MetroComboBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +60,21 @@
             this.panel1.Size = new System.Drawing.Size(618, 317);
             this.panel1.TabIndex = 2;
             // 
+            // comRe
+            // 
+            this.comRe.FormattingEnabled = true;
+            this.comRe.ItemHeight = 24;
+            this.comRe.Items.AddRange(new object[] {
+            "Khu vực 1",
+            "Khu vực 2"});
+            this.comRe.Location = new System.Drawing.Point(189, 128);
+            this.comRe.Margin = new System.Windows.Forms.Padding(4);
+            this.comRe.Name = "comRe";
+            this.comRe.Size = new System.Drawing.Size(356, 30);
+            this.comRe.TabIndex = 10;
+            this.comRe.UseSelectable = true;
+            this.comRe.SelectedIndexChanged += new System.EventHandler(this.comRe_SelectedIndexChanged);
+            // 
             // comtype
             // 
             this.comtype.FormattingEnabled = true;
@@ -73,6 +89,19 @@
             this.comtype.TabIndex = 9;
             this.comtype.UseSelectable = true;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label2.Location = new System.Drawing.Point(52, 128);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.label2.Size = new System.Drawing.Size(100, 32);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Khu vực";
+            // 
             // btnCreate
             // 
             this.btnCreate.BackColor = System.Drawing.Color.White;
@@ -81,7 +110,6 @@
             this.btnCreate.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCreate.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreate.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnCreate.Image = global::Bida.Properties.Resources.next;
             this.btnCreate.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCreate.Location = new System.Drawing.Point(189, 206);
             this.btnCreate.Margin = new System.Windows.Forms.Padding(4);
@@ -111,7 +139,6 @@
             this.btnBack.BackColor = System.Drawing.Color.White;
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBack.Image = global::Bida.Properties.Resources.back;
             this.btnBack.Location = new System.Drawing.Point(-3, 26);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
@@ -134,11 +161,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Bida.Properties.Resources.user11;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(423, 17);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 39);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 29;
             this.pictureBox1.TabStop = false;
             // 
@@ -154,33 +182,6 @@
             this.lblnv.TabIndex = 28;
             this.lblnv.Text = "Nhân Viên";
             this.lblnv.Theme = MetroFramework.MetroThemeStyle.Light;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(52, 128);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.label2.Size = new System.Drawing.Size(100, 32);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Khu vực";
-            // 
-            // comRe
-            // 
-            this.comRe.FormattingEnabled = true;
-            this.comRe.ItemHeight = 24;
-            this.comRe.Items.AddRange(new object[] {
-            "Khu vực 1",
-            "Khu vực 2"});
-            this.comRe.Location = new System.Drawing.Point(189, 128);
-            this.comRe.Margin = new System.Windows.Forms.Padding(4);
-            this.comRe.Name = "comRe";
-            this.comRe.Size = new System.Drawing.Size(356, 30);
-            this.comRe.TabIndex = 10;
-            this.comRe.UseSelectable = true;
             // 
             // frmCreateBan
             // 

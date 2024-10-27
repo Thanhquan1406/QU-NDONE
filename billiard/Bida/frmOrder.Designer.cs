@@ -33,6 +33,9 @@ namespace Bida
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvThucDon = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtTongTien = new System.Windows.Forms.TextBox();
             this.button2 = new System.Windows.Forms.Button();
             this.numSoLuong = new System.Windows.Forms.NumericUpDown();
@@ -45,9 +48,6 @@ namespace Bida
             this.metroContextMenu1 = new MetroFramework.Controls.MetroContextMenu(this.components);
             this.label5 = new System.Windows.Forms.Label();
             this.btnDat = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvThucDon)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numSoLuong)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -57,7 +57,7 @@ namespace Bida
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.label1.ForeColor = System.Drawing.Color.Turquoise;
             this.label1.Location = new System.Drawing.Point(79, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(260, 36);
@@ -79,13 +79,34 @@ namespace Bida
             this.dgvThucDon.Size = new System.Drawing.Size(555, 303);
             this.dgvThucDon.TabIndex = 4;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Tên Nước";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Số Lượng";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Giá Tiền";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
             // txtTongTien
             // 
-            this.txtTongTien.Location = new System.Drawing.Point(708, 434);
+            this.txtTongTien.Location = new System.Drawing.Point(742, 445);
             this.txtTongTien.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTongTien.Name = "txtTongTien";
             this.txtTongTien.ReadOnly = true;
-            this.txtTongTien.Size = new System.Drawing.Size(193, 22);
+            this.txtTongTien.Size = new System.Drawing.Size(161, 22);
             this.txtTongTien.TabIndex = 5;
             // 
             // button2
@@ -188,16 +209,19 @@ namespace Bida
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(581, 438);
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Turquoise;
+            this.label5.Location = new System.Drawing.Point(539, 438);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(108, 16);
+            this.label5.Size = new System.Drawing.Size(196, 29);
             this.label5.TabIndex = 41;
             this.label5.Text = "Tổng tiền dịch vụ";
             // 
             // btnDat
             // 
-            this.btnDat.Location = new System.Drawing.Point(45, 389);
+            this.btnDat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDat.Location = new System.Drawing.Point(71, 401);
             this.btnDat.Margin = new System.Windows.Forms.Padding(4);
             this.btnDat.Name = "btnDat";
             this.btnDat.Size = new System.Drawing.Size(163, 28);
@@ -205,27 +229,6 @@ namespace Bida
             this.btnDat.Text = "Đặt";
             this.btnDat.UseVisualStyleBackColor = true;
             this.btnDat.Click += new System.EventHandler(this.btnDat_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Tên Nước";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Số Lượng";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Giá Tiền";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
             // 
             // frmOrder
             // 

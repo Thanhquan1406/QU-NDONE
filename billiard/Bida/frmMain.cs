@@ -136,5 +136,14 @@ namespace Bida
             this.Close();
         }
 
+        private void metroTabPage1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

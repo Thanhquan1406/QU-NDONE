@@ -59,3 +59,11 @@ C:\Users\thanh\source\repos\LAB06_mini\billiard\Bida.BUS\obj\Debug\Bida.BUS.cspr
 C:\Users\thanh\source\repos\LAB06_mini\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.Up2Date
 C:\Users\thanh\source\repos\LAB06_mini\billiard\Bida.BUS\obj\Debug\Bida.BUS.dll
 C:\Users\thanh\source\repos\LAB06_mini\billiard\Bida.BUS\obj\Debug\Bida.BUS.pdb
+D:\Quan\billiard\bin\Bida.BUS.dll.config
+D:\Quan\billiard\bin\Bida.BUS.dll
+D:\Quan\billiard\bin\Bida.BUS.pdb
+D:\Quan\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.AssemblyReference.cache
+D:\Quan\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.CoreCompileInputs.cache
+D:\Quan\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.Up2Date
+D:\Quan\billiard\Bida.BUS\obj\Debug\Bida.BUS.dll
+D:\Quan\billiard\Bida.BUS\obj\Debug\Bida.BUS.pdb

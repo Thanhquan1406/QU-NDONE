@@ -58,3 +58,11 @@ C:\Users\thanh\source\repos\LAB06_mini\billiard\QLHS.DTO\obj\Debug\Bida.DTO.cspr
 C:\Users\thanh\source\repos\LAB06_mini\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.Up2Date
 C:\Users\thanh\source\repos\LAB06_mini\billiard\QLHS.DTO\obj\Debug\Bida.DTO.dll
 C:\Users\thanh\source\repos\LAB06_mini\billiard\QLHS.DTO\obj\Debug\Bida.DTO.pdb
+D:\Quan\billiard\bin\Bida.DTO.dll.config
+D:\Quan\billiard\bin\Bida.DTO.dll
+D:\Quan\billiard\bin\Bida.DTO.pdb
+D:\Quan\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.AssemblyReference.cache
+D:\Quan\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.CoreCompileInputs.cache
+D:\Quan\billiard\QLHS.DTO\obj\Debug\Bida.DTO.csproj.Up2Date
+D:\Quan\billiard\QLHS.DTO\obj\Debug\Bida.DTO.dll
+D:\Quan\billiard\QLHS.DTO\obj\Debug\Bida.DTO.pdb

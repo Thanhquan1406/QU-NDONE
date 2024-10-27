@@ -140,14 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="App.config" />
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Bida.DTO.KhachHang.datasource" />
@@ -155,6 +150,11 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -175,9 +175,6 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\C.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\bidafrace.png" />
   </ItemGroup>
   <ItemGroup>
@@ -190,15 +187,6 @@
     <None Include="Resources\back.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\next.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\banner..png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\user11.png" />
   </ItemGroup>
   <ItemGroup>
@@ -209,9 +197,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\create.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\end.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\play.png" />

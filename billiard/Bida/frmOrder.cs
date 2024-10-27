@@ -32,7 +32,6 @@ namespace Bida
             this.ban = b;
             this.nhanvien = n;
         }
-
         private void frmOrder_Load(object sender, EventArgs e)
         {
             LoadLoaiNuocToComboBox();
@@ -42,21 +41,19 @@ namespace Bida
         {
             using (var context = new Model())
             {
-                // Lấy danh sách các đơn hàng theo mã bàn từ CSDL
+
                 var orders = context.ORDERs
                                     .Where(o => o.MABAN == maBan)
                                     .Select(o => new
                                     {
-                                        TenNuoc = o.NUOC.TENNUOC,
+                                        TenNuoc = o.NUOC.TENUOC,
                                         SoLuong = o.SOLUONGKHACHMUA,
                                         GiaTien = o.SOLUONGKHACHMUA * o.NUOC.PRICE
                                     })
                                     .ToList();
 
-                // Xóa các dòng cũ trong DataGridView trước khi thêm dữ liệu mới
                 dgvThucDon.Rows.Clear();
 
-                // Thêm dữ liệu vào DataGridView
                 foreach (var order in orders)
                 {
                     dgvThucDon.Rows.Add(order.TenNuoc, order.SoLuong, order.GiaTien);
@@ -66,30 +63,24 @@ namespace Bida
         }
         private void LoadLoaiNuocToComboBox()
         {
-            // Lấy dữ liệu từ cơ sở dữ liệu
             var listNuoc = FetchDataFromDatabase();
 
-            // Gán dữ liệu cho ComboBox
             comboLoaiNuoc.DataSource = listNuoc;
-            comboLoaiNuoc.DisplayMember = "TENNUOC"; // Hiển thị tên nước
-            comboLoaiNuoc.ValueMember = "MANUOC";    // Giá trị thực tế là mã nước (nếu cần dùng)
+            comboLoaiNuoc.DisplayMember = "TENUOC";
+            comboLoaiNuoc.ValueMember = "MANUOC";  
         }
 
         private List<NUOC> FetchDataFromDatabase()
         {
-            using (var context = new Model()) // Thay Model1 bằng DbContext thực tế của bạn
+            using (var context = new Model())
             {
-                // Lấy tất cả các bản ghi từ bảng NUOC và chuyển thành danh sách
                 return context.NUOCs.ToList();
             }
         }
-
-
         private void LoadDataToDataGridView()
         {
 
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             int tongTien = 0;
@@ -99,24 +90,18 @@ namespace Bida
                 tongTien = 0; // Gán giá trị tổng tiền là 0 nếu TextBox trống hoặc không hợp lệ
             }
 
-            // Tiếp tục thoát và mở frmBan bất kể giá trị của tongTien
             frmBan frm = new frmBan(ban, nhanvien);
             frm.SetTongTien(tongTien);
             frm.Show();
             this.Close();
         }
 
-
-
-
         private void btnDat_Click(object sender, EventArgs e)
         {
-            // Lấy đối tượng nước hiện tại được chọn từ ComboBox
             var selectedNuoc = comboLoaiNuoc.SelectedItem as NUOC;
 
             if (selectedNuoc != null)
             {
-                // Lấy số lượng từ NumericUpDown
                 int soLuong = (int)numSoLuong.Value;
 
                 // Tính giá tiền dựa trên số lượng và giá của loại nước
@@ -126,7 +111,7 @@ namespace Bida
                 bool found = false;
                 foreach (DataGridViewRow row in dgvThucDon.Rows)
                 {
-                    if (row.Cells["Column1"].Value != null && row.Cells["Column1"].Value.ToString() == selectedNuoc.TENNUOC)
+                    if (row.Cells["Column1"].Value != null && row.Cells["Column1"].Value.ToString() == selectedNuoc.TENUOC)
                     {
                         // Nếu tìm thấy món đã tồn tại, cộng dồn số lượng và tính lại tổng giá tiền
                         int currentQuantity = Convert.ToInt32(row.Cells["Column2"].Value);
@@ -144,13 +129,10 @@ namespace Bida
                 // Nếu món chưa tồn tại, thêm dòng mới
                 if (!found)
                 {
-                    dgvThucDon.Rows.Add(selectedNuoc.TENNUOC, soLuong, giaTien);
+                    dgvThucDon.Rows.Add(selectedNuoc.TENUOC, soLuong, giaTien);
                 }
 
-                // Cập nhật tổng tiền
                 UpdateTotalPrice();
-
-                // Lưu vào CSDL
                 LuuDonHangVaoCSDL(selectedNuoc.MANUOC, soLuong, giaTien);
             }
             else
@@ -159,12 +141,10 @@ namespace Bida
             }
         }
 
-
         private void LuuDonHangVaoCSDL(int maNuoc, int soLuong, int giaTien)
         {
             using (var context = new Model()) // Thay Model1 bằng DbContext thực tế của bạn
             {
-                // Lấy giá trị MADV tiếp theo (giả sử bạn có logic để lấy giá trị này)
                 int nextMADV = context.ORDERs.Any() ? context.ORDERs.Max(o => o.MADV) + 1 : 1;
 
                 // Tạo một đối tượng ORDER mới để lưu vào CSDL
@@ -178,12 +158,10 @@ namespace Bida
                     // MABIENLAI = <giá trị tương ứng>,
                 };
 
-                // Thêm đối tượng mới vào context
                 context.ORDERs.Add(newOrder);
 
                 try
                 {
-                    // Lưu các thay đổi vào CSDL
                     context.SaveChanges();
                     MessageBox.Show("Đơn hàng đã được lưu thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -214,8 +192,6 @@ namespace Bida
                         }
                     }
                 }
-
-                // Hiển thị tổng giá tiền trong TextBox
                 txtTongTien.Text = totalPrice.ToString();
             }
             else
@@ -224,12 +200,8 @@ namespace Bida
             }
         }
 
-
-
-
         private void comboLoaiNuoc_SelectedIndexChanged(object sender, EventArgs e)
         {
-            // Lấy đối tượng nước hiện tại được chọn từ ComboBox
             var selectedNuoc = comboLoaiNuoc.SelectedItem as NUOC;
 
             if (selectedNuoc != null)
