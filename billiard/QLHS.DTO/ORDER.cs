@@ -13,13 +13,13 @@ namespace Bida.DTO
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int MADV { get; set; }
 
-        public int? MABAN { get; set; }
-
-        public int? MABIENLAI { get; set; }
-
         public int? MANUOC { get; set; }
 
         public int? SOLUONGKHACHMUA { get; set; }
+
+        public int? MABAN { get; set; }
+
+        public int? MABIENLAI { get; set; }
 
         public virtual BAN BAN { get; set; }
 

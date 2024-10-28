@@ -88,7 +88,7 @@ namespace Bida
                     {
                         if (ban2.TINHTRANG == true)
                         {
-                            MetroMessageBox.Show(this, "Bàn " + ban2.MABAN + " đang được người khác chơi vui lòng chọn bàn khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                            MessageBox.Show(this, "Bàn " + ban2.MABAN + " đang được người khác chơi vui lòng chọn bàn khác!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Question);
                         }
                         else
                         {
@@ -129,7 +129,7 @@ namespace Bida
                                 try
                                 {
                                     context.SaveChanges();
-                                    MetroMessageBox.Show(this, "Bạn đã chuyển bàn thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                                    MessageBox.Show(this, "Bạn đã chuyển bàn thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Question);
 
                                     frmBan frm = new frmBan(banMoi, nhanvien);
                                     frm.Show();

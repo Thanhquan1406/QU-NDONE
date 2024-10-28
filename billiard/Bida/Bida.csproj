@@ -187,31 +187,16 @@
     <None Include="Resources\back.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user11.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\table.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\exchange.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\create.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\play.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\time].png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\dollar-flat.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\add-user.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\print.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

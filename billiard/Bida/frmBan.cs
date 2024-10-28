@@ -220,7 +220,7 @@ namespace Bida
             int makh = comKH.SelectedValue.GetHashCode();
             new BanBUS().updatemakh(ban, makh);
 
-            MetroMessageBox.Show(this, "Đã thêm khách hàng vào Bàn " + ban.MABAN, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            MessageBox.Show(this, "Đã thêm khách hàng vào Bàn " + ban.MABAN, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Question);
 
         }
 

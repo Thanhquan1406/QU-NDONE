@@ -75,3 +75,11 @@ C:\Users\thanh\Source\Repos\QU-NDONE\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj
 C:\Users\thanh\Source\Repos\QU-NDONE\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.Up2Date
 C:\Users\thanh\Source\Repos\QU-NDONE\billiard\Bida.BUS\obj\Debug\Bida.BUS.dll
 C:\Users\thanh\Source\Repos\QU-NDONE\billiard\Bida.BUS\obj\Debug\Bida.BUS.pdb
+D:\last test\billiard\bin\Bida.BUS.dll.config
+D:\last test\billiard\bin\Bida.BUS.dll
+D:\last test\billiard\bin\Bida.BUS.pdb
+D:\last test\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.AssemblyReference.cache
+D:\last test\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.CoreCompileInputs.cache
+D:\last test\billiard\Bida.BUS\obj\Debug\Bida.BUS.csproj.Up2Date
+D:\last test\billiard\Bida.BUS\obj\Debug\Bida.BUS.dll
+D:\last test\billiard\Bida.BUS\obj\Debug\Bida.BUS.pdb

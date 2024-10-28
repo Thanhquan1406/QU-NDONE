@@ -172,3 +172,21 @@ C:\Users\thanh\Source\Repos\QU-NDONE\billiard\Bida\obj\Debug\Bida.csproj.CoreCom
 C:\Users\thanh\Source\Repos\QU-NDONE\billiard\Bida\obj\Debug\Bida.csproj.Up2Date
 C:\Users\thanh\Source\Repos\QU-NDONE\billiard\Bida\obj\Debug\Bida.exe
 C:\Users\thanh\Source\Repos\QU-NDONE\billiard\Bida\obj\Debug\Bida.pdb
+D:\last test\billiard\bin\Bida.exe.config
+D:\last test\billiard\bin\Bida.exe
+D:\last test\billiard\bin\Bida.pdb
+D:\last test\billiard\Bida\obj\Debug\Bida.csproj.AssemblyReference.cache
+D:\last test\billiard\Bida\obj\Debug\Bida.frmAdd.resources
+D:\last test\billiard\Bida\obj\Debug\Bida.frmBan.resources
+D:\last test\billiard\Bida\obj\Debug\Bida.frmBienLai.resources
+D:\last test\billiard\Bida\obj\Debug\Bida.frmChuyen.resources
+D:\last test\billiard\Bida\obj\Debug\Bida.frmCreateBan.resources
+D:\last test\billiard\Bida\obj\Debug\Bida.frmMain.resources
+D:\last test\billiard\Bida\obj\Debug\Bida.frmLogin.resources
+D:\last test\billiard\Bida\obj\Debug\Bida.frmOrder.resources
+D:\last test\billiard\Bida\obj\Debug\Bida.Properties.Resources.resources
+D:\last test\billiard\Bida\obj\Debug\Bida.csproj.GenerateResource.cache
+D:\last test\billiard\Bida\obj\Debug\Bida.csproj.CoreCompileInputs.cache
+D:\last test\billiard\Bida\obj\Debug\Bida.csproj.Up2Date
+D:\last test\billiard\Bida\obj\Debug\Bida.exe
+D:\last test\billiard\Bida\obj\Debug\Bida.pdb

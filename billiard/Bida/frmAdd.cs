@@ -34,7 +34,7 @@ namespace Bida
         {
             if (txtName.Text.Equals("") || txtName.Text.Equals(""))
             {
-                MetroMessageBox.Show(this, "Chưa điền thông tin đầy đủ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MessageBox.Show(this, "Chưa điền thông tin đầy đủ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Question);
 
 
             }
@@ -46,7 +46,7 @@ namespace Bida
                 kh.TENKH = tenkh; 
                 kh.SDT = sdt; 
                 new KhachHangBUS().addKH(kh);
-                MetroMessageBox.Show(this, "Thêm Khách hàng thành công ", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MessageBox.Show(this, "Thêm Khách hàng thành công ", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 frmBan a = new frmBan(ban, nhanvien);
                 a.Show();
                 this.Close();

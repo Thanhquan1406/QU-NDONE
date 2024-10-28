@@ -36,7 +36,6 @@
             this.txtTimeEnd = new System.Windows.Forms.TextBox();
             this.comKH = new MetroFramework.Controls.MetroComboBox();
             this.khachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.lblDate = new MetroFramework.Controls.MetroLabel();
             this.txtGio = new System.Windows.Forms.TextBox();
@@ -56,6 +55,7 @@
             this.txtTienOrder = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBan)).BeginInit();
@@ -126,19 +126,6 @@
             // khachHangBindingSource
             // 
             this.khachHangBindingSource.DataSource = typeof(Bida.DTO.KHACHHANG);
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.metroLabel1.Location = new System.Drawing.Point(36, 208);
-            this.metroLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(116, 25);
-            this.metroLabel1.Style = MetroFramework.MetroColorStyle.Green;
-            this.metroLabel1.TabIndex = 16;
-            this.metroLabel1.Text = "Khách hàng : ";
-            this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
             // metroLabel4
             // 
@@ -345,7 +332,7 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.Turquoise;
+            this.btnAdd.BackColor = System.Drawing.Color.Black;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -412,12 +399,23 @@
             this.pictureBox1.TabIndex = 39;
             this.pictureBox1.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(61, 208);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(124, 25);
+            this.label5.TabIndex = 40;
+            this.label5.Text = "Khách hàng:";
+            // 
             // frmBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(945, 661);
             this.ControlBox = false;
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTienOrder);
@@ -432,7 +430,6 @@
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.btnChange);
             this.Controls.Add(this.metroLabel4);
-            this.Controls.Add(this.metroLabel1);
             this.Controls.Add(label2);
             this.Controls.Add(this.comKH);
             this.Controls.Add(this.btnBack);
@@ -470,7 +467,6 @@
         private System.Windows.Forms.Button btnTinh;
         private System.Windows.Forms.Button btnBack;
         private MetroFramework.Controls.MetroComboBox comKH;
-        private MetroFramework.Controls.MetroLabel metroLabel1;
         private MetroFramework.Controls.MetroLabel metroLabel4;
         private System.Windows.Forms.Button btnChange;
         private MetroFramework.Controls.MetroLabel lblDate;
@@ -486,5 +482,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button bttSave;
+        private System.Windows.Forms.Label label5;
     }
 }

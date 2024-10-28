@@ -76,3 +76,11 @@ C:\Users\thanh\Source\Repos\QU-NDONE\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj
 C:\Users\thanh\Source\Repos\QU-NDONE\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.Up2Date
 C:\Users\thanh\Source\Repos\QU-NDONE\billiard\Bida.DAO\obj\Debug\Bida.DAO.dll
 C:\Users\thanh\Source\Repos\QU-NDONE\billiard\Bida.DAO\obj\Debug\Bida.DAO.pdb
+D:\last test\billiard\bin\Bida.DAO.dll.config
+D:\last test\billiard\bin\Bida.DAO.dll
+D:\last test\billiard\bin\Bida.DAO.pdb
+D:\last test\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.AssemblyReference.cache
+D:\last test\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.CoreCompileInputs.cache
+D:\last test\billiard\Bida.DAO\obj\Debug\Bida.DAO.csproj.Up2Date
+D:\last test\billiard\Bida.DAO\obj\Debug\Bida.DAO.dll
+D:\last test\billiard\Bida.DAO\obj\Debug\Bida.DAO.pdb

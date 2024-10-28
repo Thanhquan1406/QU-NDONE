@@ -49,7 +49,7 @@ namespace Bida
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MetroMessageBox.Show(this, "In thành công", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Question);
+            MessageBox.Show(this, "In thành công", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Question);
             frmMain a = new frmMain(bienlai.NHANVIEN);
             a.Show();
             this.Close();

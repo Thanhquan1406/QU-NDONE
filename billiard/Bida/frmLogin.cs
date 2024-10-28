@@ -12,6 +12,7 @@ using MetroFramework.Forms;
 using Bida.BUS;
 using Bida.DTO;
 using MetroFramework;
+using System.Management.Instrumentation;
 
 namespace Bida
 {
@@ -32,13 +33,17 @@ namespace Bida
             frmMain frm = new frmMain(nv);
             frm.ShowDialog();
         }
-      
+        
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string user = txtUser.Text;
             string pass = txtPass.Text;
 
-            Boolean kt = new NhanVienBUS().ValidateNv(user, pass);
+            MaHoa hashUtil = new MaHoa();
+
+            string hashedPass = hashUtil.ComputeMD5Hash(pass);
+
+            Boolean kt = new NhanVienBUS().ValidateNv(user, hashedPass);
             if (kt == true)
             {
                 NHANVIEN nv = new NhanVienBUS().GetNhanVienbyID(user);
@@ -49,7 +54,7 @@ namespace Bida
             }
             else
             {
-                DialogResult dialogResult = MetroMessageBox.Show(this, "Bạn đã nhập sai tài khoản và mật khảu bạn có muốn tiếp tục", "Đăng nhập lỗi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                DialogResult dialogResult = MessageBox.Show(this, "Bạn đã nhập sai tài khoản và mật khảu bạn có muốn nhập lại?", "Đăng nhập lỗi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 txtUser.Text = "";
                 txtPass.Text = "";
                 if (dialogResult == DialogResult.Yes)

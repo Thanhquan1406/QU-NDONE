@@ -54,7 +54,7 @@ namespace Bida
             
             if (comRe.Text.Equals("") || comtype.Text.Equals(""))
             {
-                MetroMessageBox.Show(this, "Chưa chọn loại bàn hoặc khu vực bàn", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MessageBox.Show(this, "Chưa chọn loại bàn hoặc khu vực bàn", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Question);
 
 
             }
@@ -67,7 +67,7 @@ namespace Bida
               
                 new BanBUS().AddBan(a);
                 
-                MetroMessageBox.Show(this, "Thêm bàn thành công ", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Question);
+                MessageBox.Show(this, "Thêm bàn thành công ", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Question);
                 frmMain frm = new frmMain(nhanvien);
                 frm.Show();
                 this.Close();
