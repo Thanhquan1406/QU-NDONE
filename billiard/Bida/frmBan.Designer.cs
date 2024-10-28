@@ -37,7 +37,6 @@
             this.comKH = new MetroFramework.Controls.MetroComboBox();
             this.khachHangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.lblnv = new MetroFramework.Controls.MetroLabel();
             this.metroLabel4 = new MetroFramework.Controls.MetroLabel();
             this.lblDate = new MetroFramework.Controls.MetroLabel();
             this.txtGio = new System.Windows.Forms.TextBox();
@@ -46,7 +45,6 @@
             this.txtGia = new System.Windows.Forms.TextBox();
             this.btnPay = new System.Windows.Forms.Button();
             this.btnChange = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnTinh = new System.Windows.Forms.Button();
             this.btnEnd = new System.Windows.Forms.Button();
@@ -57,10 +55,11 @@
             this.btnOder = new System.Windows.Forms.Button();
             this.txtTienOrder = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBan)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -141,19 +140,6 @@
             this.metroLabel1.Text = "Khách hàng : ";
             this.metroLabel1.Theme = MetroFramework.MetroThemeStyle.Light;
             // 
-            // lblnv
-            // 
-            this.lblnv.AutoSize = true;
-            this.lblnv.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.lblnv.Location = new System.Drawing.Point(821, 35);
-            this.lblnv.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblnv.Name = "lblnv";
-            this.lblnv.Size = new System.Drawing.Size(93, 25);
-            this.lblnv.Style = MetroFramework.MetroColorStyle.Green;
-            this.lblnv.TabIndex = 18;
-            this.lblnv.Text = "Nhân Viên";
-            this.lblnv.Theme = MetroFramework.MetroThemeStyle.Light;
-            // 
             // metroLabel4
             // 
             this.metroLabel4.AutoSize = true;
@@ -207,7 +193,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Turquoise;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(28, 518);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -231,13 +217,12 @@
             // 
             // btnPay
             // 
-            this.btnPay.BackColor = System.Drawing.Color.Turquoise;
+            this.btnPay.BackColor = System.Drawing.Color.White;
             this.btnPay.Enabled = false;
             this.btnPay.FlatAppearance.BorderSize = 0;
-            this.btnPay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPay.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnPay.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPay.ForeColor = System.Drawing.Color.Black;
-            this.btnPay.Image = global::Bida.Properties.Resources.dollar_flat;
             this.btnPay.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPay.Location = new System.Drawing.Point(675, 484);
             this.btnPay.Margin = new System.Windows.Forms.Padding(4);
@@ -245,39 +230,25 @@
             this.btnPay.Size = new System.Drawing.Size(239, 70);
             this.btnPay.TabIndex = 30;
             this.btnPay.Text = "Thanh toán";
-            this.btnPay.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPay.UseVisualStyleBackColor = false;
             this.btnPay.Click += new System.EventHandler(this.btnPay_Click);
             // 
             // btnChange
             // 
-            this.btnChange.BackColor = System.Drawing.Color.Turquoise;
+            this.btnChange.BackColor = System.Drawing.Color.White;
             this.btnChange.FlatAppearance.BorderSize = 0;
-            this.btnChange.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnChange.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnChange.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnChange.ForeColor = System.Drawing.Color.Black;
-            this.btnChange.Image = global::Bida.Properties.Resources.exchange;
             this.btnChange.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btnChange.Location = new System.Drawing.Point(759, 78);
+            this.btnChange.Location = new System.Drawing.Point(726, 203);
             this.btnChange.Margin = new System.Windows.Forms.Padding(4);
             this.btnChange.Name = "btnChange";
-            this.btnChange.Size = new System.Drawing.Size(123, 89);
+            this.btnChange.Size = new System.Drawing.Size(138, 36);
             this.btnChange.TabIndex = 23;
-            this.btnChange.Text = "Chuyển bàn";
-            this.btnChange.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnChange.Text = "Đổi Bàn";
             this.btnChange.UseVisualStyleBackColor = false;
             this.btnChange.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Bida.Properties.Resources.user11;
-            this.pictureBox1.Location = new System.Drawing.Point(759, 21);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
             // 
             // btnBack
             // 
@@ -295,10 +266,10 @@
             // 
             // btnTinh
             // 
-            this.btnTinh.BackColor = System.Drawing.Color.Turquoise;
+            this.btnTinh.BackColor = System.Drawing.Color.White;
             this.btnTinh.Enabled = false;
             this.btnTinh.FlatAppearance.BorderSize = 0;
-            this.btnTinh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTinh.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnTinh.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTinh.ForeColor = System.Drawing.Color.Black;
             this.btnTinh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -307,19 +278,18 @@
             this.btnTinh.Name = "btnTinh";
             this.btnTinh.Size = new System.Drawing.Size(181, 38);
             this.btnTinh.TabIndex = 7;
-            this.btnTinh.Text = "Tiền";
+            this.btnTinh.Text = "Tính Tiền";
             this.btnTinh.UseVisualStyleBackColor = false;
             this.btnTinh.Click += new System.EventHandler(this.btnTinh_Click);
             // 
             // btnEnd
             // 
-            this.btnEnd.BackColor = System.Drawing.Color.Turquoise;
+            this.btnEnd.BackColor = System.Drawing.Color.White;
             this.btnEnd.Enabled = false;
             this.btnEnd.FlatAppearance.BorderSize = 0;
-            this.btnEnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEnd.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnEnd.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEnd.ForeColor = System.Drawing.Color.Black;
-
             this.btnEnd.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEnd.Location = new System.Drawing.Point(240, 313);
             this.btnEnd.Margin = new System.Windows.Forms.Padding(4);
@@ -327,18 +297,16 @@
             this.btnEnd.Size = new System.Drawing.Size(143, 38);
             this.btnEnd.TabIndex = 6;
             this.btnEnd.Text = "Kết thúc";
-            this.btnEnd.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEnd.UseVisualStyleBackColor = false;
             this.btnEnd.Click += new System.EventHandler(this.btnEnd_Click);
             // 
             // btnStart
             // 
-            this.btnStart.BackColor = System.Drawing.Color.Turquoise;
+            this.btnStart.BackColor = System.Drawing.Color.White;
             this.btnStart.FlatAppearance.BorderSize = 0;
-            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStart.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnStart.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart.ForeColor = System.Drawing.Color.Black;
-            this.btnStart.Image = global::Bida.Properties.Resources.play;
             this.btnStart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStart.Location = new System.Drawing.Point(240, 256);
             this.btnStart.Margin = new System.Windows.Forms.Padding(4);
@@ -346,7 +314,6 @@
             this.btnStart.Size = new System.Drawing.Size(143, 38);
             this.btnStart.TabIndex = 4;
             this.btnStart.Text = "Bắt đầu";
-            this.btnStart.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnStart.UseVisualStyleBackColor = false;
             this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
@@ -361,9 +328,9 @@
             // 
             // bttSave
             // 
-            this.bttSave.BackColor = System.Drawing.Color.Turquoise;
+            this.bttSave.BackColor = System.Drawing.Color.White;
             this.bttSave.FlatAppearance.BorderSize = 0;
-            this.bttSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.bttSave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.bttSave.Font = new System.Drawing.Font("Tahoma", 12.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bttSave.ForeColor = System.Drawing.Color.Black;
             this.bttSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -395,13 +362,13 @@
             // 
             // btnOder
             // 
-            this.btnOder.BackColor = System.Drawing.Color.Turquoise;
+            this.btnOder.BackColor = System.Drawing.Color.White;
             this.btnOder.FlatAppearance.BorderSize = 0;
-            this.btnOder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOder.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnOder.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnOder.ForeColor = System.Drawing.Color.Black;
             this.btnOder.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnOder.Location = new System.Drawing.Point(759, 203);
+            this.btnOder.Location = new System.Drawing.Point(726, 310);
             this.btnOder.Margin = new System.Windows.Forms.Padding(4);
             this.btnOder.Name = "btnOder";
             this.btnOder.Size = new System.Drawing.Size(138, 36);
@@ -435,11 +402,23 @@
             this.label4.TabIndex = 38;
             this.label4.Text = "Tiền đồ uống :";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Bida.Properties.Resources.table;
+            this.pictureBox1.Location = new System.Drawing.Point(417, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(243, 138);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 39;
+            this.pictureBox1.TabStop = false;
+            // 
             // frmBan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(945, 661);
+            this.ControlBox = false;
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtTienOrder);
             this.Controls.Add(this.btnOder);
@@ -452,9 +431,7 @@
             this.Controls.Add(this.txtGio);
             this.Controls.Add(this.lblDate);
             this.Controls.Add(this.btnChange);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.metroLabel4);
-            this.Controls.Add(this.lblnv);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(label2);
             this.Controls.Add(this.comKH);
@@ -467,13 +444,15 @@
             this.Controls.Add(this.lblBan);
             this.Controls.Add(this.picBan);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmBan";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Load += new System.EventHandler(this.frmBan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.khachHangBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBan)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -492,9 +471,7 @@
         private System.Windows.Forms.Button btnBack;
         private MetroFramework.Controls.MetroComboBox comKH;
         private MetroFramework.Controls.MetroLabel metroLabel1;
-        private MetroFramework.Controls.MetroLabel lblnv;
         private MetroFramework.Controls.MetroLabel metroLabel4;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnChange;
         private MetroFramework.Controls.MetroLabel lblDate;
         private System.Windows.Forms.TextBox txtGio;
@@ -502,11 +479,12 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtGia;
         private System.Windows.Forms.Button btnPay;
-        private System.Windows.Forms.Button bttSave;
         private System.Windows.Forms.BindingSource khachHangBindingSource;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Button btnOder;
         private System.Windows.Forms.TextBox txtTienOrder;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button bttSave;
     }
 }

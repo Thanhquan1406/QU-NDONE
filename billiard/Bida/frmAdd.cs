@@ -27,7 +27,7 @@ namespace Bida
 
         private void frmAdd_Load(object sender, EventArgs e)
         {
-            lblnv.Text = nhanvien.TenNhanVien;
+            
         }
 
         private void btnCreate_Click(object sender, EventArgs e)

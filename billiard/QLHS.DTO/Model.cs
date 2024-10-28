@@ -8,7 +8,7 @@ namespace Bida.DTO
     public partial class Model : DbContext
     {
         public Model()
-            : base("name=ModelDL")
+            : base("name=Model8")
         {
         }
 

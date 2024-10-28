@@ -30,13 +30,10 @@
         {
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.lblNV = new MetroFramework.Controls.MetroLabel();
             this.label1 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.metroTabControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // metroTabControl1
@@ -67,7 +64,6 @@
             this.metroTabPage1.Size = new System.Drawing.Size(953, 579);
             this.metroTabPage1.Style = MetroFramework.MetroColorStyle.Red;
             this.metroTabPage1.TabIndex = 0;
-            this.metroTabPage1.Text = "Khu vực 1";
             this.metroTabPage1.Theme = MetroFramework.MetroThemeStyle.Light;
             this.metroTabPage1.VerticalScrollbar = true;
             this.metroTabPage1.VerticalScrollbarBarColor = true;
@@ -75,30 +71,17 @@
             this.metroTabPage1.VerticalScrollbarSize = 13;
             this.metroTabPage1.Click += new System.EventHandler(this.metroTabPage1_Click);
             // 
-            // lblNV
-            // 
-            this.lblNV.AutoSize = true;
-            this.lblNV.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.lblNV.Location = new System.Drawing.Point(883, 30);
-            this.lblNV.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNV.Name = "lblNV";
-            this.lblNV.Size = new System.Drawing.Size(93, 25);
-            this.lblNV.Style = MetroFramework.MetroColorStyle.Green;
-            this.lblNV.TabIndex = 20;
-            this.lblNV.Text = "Nhân Viên";
-            this.lblNV.Theme = MetroFramework.MetroThemeStyle.Light;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Turquoise;
-            this.label1.Location = new System.Drawing.Point(72, 27);
+            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label1.Location = new System.Drawing.Point(348, 29);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(351, 41);
+            this.label1.Size = new System.Drawing.Size(305, 41);
             this.label1.TabIndex = 23;
-            this.label1.Text = "Danh sách bàn bida";
+            this.label1.Text = "DANH SÁCH BÀN\r\n";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // btnBack
@@ -106,11 +89,13 @@
             this.btnBack.BackColor = System.Drawing.Color.White;
             this.btnBack.FlatAppearance.BorderSize = 0;
             this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBack.ForeColor = System.Drawing.Color.Black;
             this.btnBack.Image = global::Bida.Properties.Resources.back;
-            this.btnBack.Location = new System.Drawing.Point(5, 22);
+            this.btnBack.Location = new System.Drawing.Point(11, 13);
             this.btnBack.Margin = new System.Windows.Forms.Padding(4);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(71, 53);
+            this.btnBack.Size = new System.Drawing.Size(73, 53);
             this.btnBack.TabIndex = 24;
             this.btnBack.UseVisualStyleBackColor = false;
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
@@ -119,46 +104,34 @@
             // 
             this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Image = global::Bida.Properties.Resources.create;
-            this.btnAdd.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.btnAdd.Location = new System.Drawing.Point(903, 59);
+            this.btnAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Location = new System.Drawing.Point(879, 59);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(85, 51);
+            this.btnAdd.Size = new System.Drawing.Size(109, 51);
             this.btnAdd.TabIndex = 22;
+            this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Bida.Properties.Resources.user11;
-            this.pictureBox1.Location = new System.Drawing.Point(847, 23);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 39);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1015, 726);
+            this.ControlBox = false;
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.lblNV);
             this.Controls.Add(this.metroTabControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmMain";
             this.Padding = new System.Windows.Forms.Padding(27, 74, 27, 25);
             this.Style = MetroFramework.MetroColorStyle.Green;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.metroTabControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -168,8 +141,6 @@
 
         private MetroFramework.Controls.MetroTabControl metroTabControl1;
         private MetroFramework.Controls.MetroTabPage metroTabPage1;
-        private MetroFramework.Controls.MetroLabel lblNV;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnBack;

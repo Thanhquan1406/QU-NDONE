@@ -46,12 +46,6 @@ namespace Bida
                 frmMain a = new frmMain(nv);
                 a.Show();
                 this.Hide();
-  
-
-                //Thread t = new Thread(() => showFormMain(nv));
-                //t.Start();
-                //t.Join();
-
             }
             else
             {
@@ -60,7 +54,7 @@ namespace Bida
                 txtPass.Text = "";
                 if (dialogResult == DialogResult.Yes)
                 {
-                    //do something
+                    
                 }
                 else if (dialogResult == DialogResult.No)
                 {
@@ -73,6 +67,11 @@ namespace Bida
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

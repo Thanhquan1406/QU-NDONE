@@ -9,9 +9,9 @@ namespace Bida.DAO
 {
     class DataProvider
     {
-        public static string onStr = "Server=DLONG\\SQLEXPRESS;Database=Bida;Integrated Security=True;";
+        //public static string onStr = "Server=DLONG\\SQLEXPRESS;Database=Bida;Integrated Security=True;";
         //public static string onStr = "Server=DESKTOP-PEH7GUJ\\SQLEXPRESS;Database=Bida;Integrated Security=True;";
-        //public static string onStr = "Server=LENOVO\\SQLEXPRESS01;Database=Bida;Integrated Security=True;";
+        public static string onStr = "Server=LENOVO\\SQLEXPRESS01;Database=Bida;Integrated Security=True;";
 
 
         SqlConnection conn;
@@ -30,7 +30,6 @@ namespace Bida.DAO
             }
             catch (SqlException ex)
             {
-                // Log the exception or handle it as needed
                 Console.WriteLine("Connection error: " + ex.Message);
                 throw;
             }

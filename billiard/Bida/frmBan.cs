@@ -87,7 +87,7 @@ namespace Bida
                 return;
             }
 
-            lblnv.Text = nhanvien.TenNhanVien;
+            
             var date1 = DateTime.Now;
             lblDate.Text = date1.ToString("dd/MM/yyyy");
             this.lblBan.Text = "Bàn " + ban.MABAN;
@@ -235,21 +235,17 @@ namespace Bida
         {
             using (var context = new Model())
             {
-                // Tìm tất cả các đơn hàng liên quan đến bàn hiện tại
                 var ordersToDelete = context.ORDERs.Where(o => o.MABAN == ban.MABAN).ToList();
 
-                // Xóa tất cả các đơn hàng tìm thấy
                 if (ordersToDelete.Count > 0)
                 {
                     context.ORDERs.RemoveRange(ordersToDelete);
 
                     try
                     {
-                        // Lưu các thay đổi vào CSDL
                         context.SaveChanges();
-                        MessageBox.Show("Đã thanh toán và xóa tất cả đồ uống của bàn này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Đã thanh toán", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                        // Làm mới lại trạng thái bàn nếu cần (cập nhật trạng thái hoặc làm trống dữ liệu liên quan)
                         Refesh();
                     }
                     catch (Exception ex)
@@ -259,7 +255,7 @@ namespace Bida
                 }
                 else
                 {
-                    MessageBox.Show("Không có đồ uống nào để xóa cho bàn này.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("Đã thanh toán.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
             }
             int makh = comKH.SelectedValue.GetHashCode();

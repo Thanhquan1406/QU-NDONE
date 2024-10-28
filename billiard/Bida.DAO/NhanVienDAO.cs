@@ -24,18 +24,16 @@ namespace Bida.DAO
 
             while (reader.Read())
             {
-                // Updated variable names and instantiation
-                string manv = reader.GetString(0); // Read as string
+                string manv = reader.GetString(0);
                 string taikhoan = reader.GetString(1);
                 bool calam = reader.GetBoolean(2);
                 string pass = reader.GetString(3);
 
-                // Adjusted instantiation to match the existing NHANVIEN constructor
-                NHANVIEN b = new NHANVIEN(); // Use the default constructor
-                b.MANHANVIEN = manv; // Directly assign the string
-                b.TenNhanVien = taikhoan; // Set the TenNhanVien property
-                b.CALAM = calam; // Set the CALAM property
-                b.PASSNV = pass; // Set the PASSNV property
+                NHANVIEN b = new NHANVIEN();
+                b.MANHANVIEN = manv;
+                b.TenNhanVien = taikhoan;
+                b.CALAM = calam;
+                b.PASSNV = pass;
                 lst.Add(b);
             }
             return lst;

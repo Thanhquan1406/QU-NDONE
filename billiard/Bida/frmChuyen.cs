@@ -30,7 +30,7 @@ namespace Bida
         private void frmChuyen_Load(object sender, EventArgs e)
         {
             getTable1();
-            lblNV.Text = nhanvien.TenNhanVien;
+          
 
         }
         private void getTable1()
@@ -94,7 +94,6 @@ namespace Bida
                         {
                             using (var context = new Model())
                             {
-                                // Cập nhật trạng thái và thông tin bàn cũ và bàn mới
                                 var banCu = context.BANs.Find(ban.MABAN);
                                 var banMoi = context.BANs.Find(ban2.MABAN);
 
@@ -104,32 +103,26 @@ namespace Bida
                                     return;
                                 }
 
-                                // Tìm khách hàng liên quan đến bàn cũ
                                 var khachHangCu = context.KHACHHANGs.Find(banCu.MAKH);
 
-                                // Cập nhật khách hàng cho bàn mới nếu có khách hàng liên quan đến bàn cũ
                                 if (khachHangCu != null)
                                 {
-                                    banMoi.MAKH = khachHangCu.MAKH; // Gán mã khách hàng cho bàn mới
+                                    banMoi.MAKH = khachHangCu.MAKH;
                                     context.Entry(banMoi).State = System.Data.Entity.EntityState.Modified;
                                 }
                                 else
                                 {
-                                    // Nếu không có khách hàng, đặt MAKH của bàn mới về null (nếu cấu trúc cho phép)
                                     banMoi.MAKH = null;
                                 }
-
-                                // Cập nhật trạng thái của bàn cũ và bàn mới
                                 banCu.TINHTRANG = false;
                                 banMoi.TINHTRANG = true;
                                 context.Entry(banCu).State = System.Data.Entity.EntityState.Modified;
                                 context.Entry(banMoi).State = System.Data.Entity.EntityState.Modified;
 
-                                // Cập nhật mã bàn cho các đơn hàng liên quan
                                 var ordersToUpdate = context.ORDERs.Where(o => o.MABAN == banCu.MABAN).ToList();
                                 foreach (var order in ordersToUpdate)
                                 {
-                                    order.MABAN = banMoi.MABAN; // Gán mã bàn mới
+                                    order.MABAN = banMoi.MABAN;
                                     context.Entry(order).State = System.Data.Entity.EntityState.Modified;
                                 }
 
@@ -138,7 +131,6 @@ namespace Bida
                                     context.SaveChanges();
                                     MetroMessageBox.Show(this, "Bạn đã chuyển bàn thành công!", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Question);
 
-                                    // Hiển thị frmBan cho bàn mới
                                     frmBan frm = new frmBan(banMoi, nhanvien);
                                     frm.Show();
                                     this.Close();

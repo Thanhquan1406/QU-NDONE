@@ -31,9 +31,7 @@ namespace Bida.DAO
                 int KhuVuc = reader.GetInt32(2);
                 bool TinhTrang = reader.GetBoolean(3);
 
-                // Kiểm tra nếu GIOBD là NULL
                 DateTime? GioBD = reader.IsDBNull(4) ? (DateTime?)null : reader.GetDateTime(4);
-                // Kiểm tra nếu GIOKT là NULL
                 DateTime? GioKT = reader.IsDBNull(5) ? (DateTime?)null : reader.GetDateTime(5);
 
                 BAN b = new BAN(LoaiBan, KhuVuc, TinhTrang, GioBD, GioKT);
@@ -55,11 +53,9 @@ namespace Bida.DAO
             string kt = b.GIOKT.HasValue ? b.GIOKT.Value.ToString("yyyy-MM-dd HH:mm:ss") : null;
             provider.Connect();
 
-            // Xử lý nullable bool
             int loaiban = b.LOAIBAN.HasValue && b.LOAIBAN.Value ? 1 : 0;
             int tinhtrang = b.TINHTRANG.HasValue && b.TINHTRANG.Value ? 1 : 0;
 
-            // Xử lý trường hợp bd và kt có thể là null
             string sql = "UPDATE ban SET LOAIBAN = " + loaiban + ", KHUVUC = " + b.KHUVUC + ", TINHTRANG = " + tinhtrang +
                          (bd != null ? ", GIOBD = '" + bd + "'" : ", GIOBD = NULL") +
                          (kt != null ? ", GIOKT = '" + kt + "'" : ", GIOKT = NULL") +
@@ -76,8 +72,8 @@ namespace Bida.DAO
 
             provider.Connect();
 
-            int loaiban = b.LOAIBAN.HasValue && b.LOAIBAN.Value ? 1 : 0;  // Xử lý bool?
-            int tinhtrang = b.TINHTRANG.HasValue && b.TINHTRANG.Value ? 1 : 0;  // Xử lý bool?
+            int loaiban = b.LOAIBAN.HasValue && b.LOAIBAN.Value ? 1 : 0;
+            int tinhtrang = b.TINHTRANG.HasValue && b.TINHTRANG.Value ? 1 : 0;
 
             string sql = "INSERT INTO BAN (LOAIBAN, KHUVUC, TINHTRANG, GIOBD, GIOKT, MAKH) VALUES ("
                 + loaiban + "," + b.KHUVUC + "," + tinhtrang + ",'" + bd + "','" + kt + "'," + 1 + ")";

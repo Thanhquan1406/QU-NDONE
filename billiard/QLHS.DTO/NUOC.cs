@@ -20,7 +20,7 @@ namespace Bida.DTO
         public int MANUOC { get; set; }
 
         [StringLength(50)]
-        public string TENUOC { get; set; }
+        public string TENNUOC { get; set; }
 
         public int? PRICE { get; set; }
 

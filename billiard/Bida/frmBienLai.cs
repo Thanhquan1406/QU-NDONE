@@ -29,16 +29,16 @@ namespace Bida
 
             lblGiobd.Text = bienlai.GioBD.HasValue
                 ? bienlai.GioBD.Value.ToString("HH:mm:ss dd/MM/yyyy")
-                : "N/A";  // Hoặc giá trị mặc định bạn muốn hiển thị nếu null
+                : "N/A";
 
             lblGiokt.Text = bienlai.GioKT.HasValue
                 ? bienlai.GioKT.Value.ToString("HH:mm:ss dd/MM/yyyy")
-                : "N/A";  // Hoặc giá trị mặc định nếu null
+                : "N/A"; 
 
             lblKH.Text = "" + bienlai.KHACHHANG.TENKH;
 
-            lblTongTien.Text = bienlai.TONGTIEN.ToString();  // Đảm bảo rằng TONGTIEN là số hoặc kiểu chuỗi
-            lblthoigan.Text = bienlai.ThoiGian.ToString();   // Đảm bảo rằng ThoiGian là số hoặc kiểu chuỗi
+            lblTongTien.Text = bienlai.TONGTIEN.ToString();
+            lblthoigan.Text = bienlai.ThoiGian.ToString();
         }
 
 

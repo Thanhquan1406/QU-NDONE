@@ -30,7 +30,7 @@ namespace Bida
         private void Form1_Load(object sender, EventArgs e)
         {
             getTable1();
-            lblNV.Text = nhanvien.TenNhanVien;
+            
 
         }
 
@@ -90,10 +90,6 @@ namespace Bida
 
                     btn.Click += (s, e) =>
                     {
-                        //Thread t = new Thread(() => showFormBan(ban,nhanvien));
-                        //t.Start();
-                        //t.Join();
-
                         frmBan frm = new frmBan(ban, nhanvien);
                         frm.Show();
                         this.Close();

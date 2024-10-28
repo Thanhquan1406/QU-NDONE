@@ -46,7 +46,7 @@ namespace Bida
                                     .Where(o => o.MABAN == maBan)
                                     .Select(o => new
                                     {
-                                        TenNuoc = o.NUOC.TENUOC,
+                                        TenNuoc = o.NUOC.TENNUOC,
                                         SoLuong = o.SOLUONGKHACHMUA,
                                         GiaTien = o.SOLUONGKHACHMUA * o.NUOC.PRICE
                                     })
@@ -66,7 +66,7 @@ namespace Bida
             var listNuoc = FetchDataFromDatabase();
 
             comboLoaiNuoc.DataSource = listNuoc;
-            comboLoaiNuoc.DisplayMember = "TENUOC";
+            comboLoaiNuoc.DisplayMember = "TENNUOC";
             comboLoaiNuoc.ValueMember = "MANUOC";  
         }
 
@@ -84,10 +84,9 @@ namespace Bida
         private void button2_Click(object sender, EventArgs e)
         {
             int tongTien = 0;
-            // Kiểm tra nếu TextBox trống hoặc giá trị không thể chuyển đổi thành số
             if (string.IsNullOrWhiteSpace(txtTongTien.Text) || !int.TryParse(txtTongTien.Text, out tongTien))
             {
-                tongTien = 0; // Gán giá trị tổng tiền là 0 nếu TextBox trống hoặc không hợp lệ
+                tongTien = 0;
             }
 
             frmBan frm = new frmBan(ban, nhanvien);
@@ -104,16 +103,13 @@ namespace Bida
             {
                 int soLuong = (int)numSoLuong.Value;
 
-                // Tính giá tiền dựa trên số lượng và giá của loại nước
                 int giaTien = soLuong * (selectedNuoc.PRICE.HasValue ? selectedNuoc.PRICE.Value : 0);
 
-                // Kiểm tra xem loại nước đã tồn tại trong DataGridView chưa
                 bool found = false;
                 foreach (DataGridViewRow row in dgvThucDon.Rows)
                 {
-                    if (row.Cells["Column1"].Value != null && row.Cells["Column1"].Value.ToString() == selectedNuoc.TENUOC)
+                    if (row.Cells["Column1"].Value != null && row.Cells["Column1"].Value.ToString() == selectedNuoc.TENNUOC)
                     {
-                        // Nếu tìm thấy món đã tồn tại, cộng dồn số lượng và tính lại tổng giá tiền
                         int currentQuantity = Convert.ToInt32(row.Cells["Column2"].Value);
                         int newQuantity = currentQuantity + soLuong;
                         row.Cells["Column2"].Value = newQuantity;
@@ -126,10 +122,9 @@ namespace Bida
                     }
                 }
 
-                // Nếu món chưa tồn tại, thêm dòng mới
                 if (!found)
                 {
-                    dgvThucDon.Rows.Add(selectedNuoc.TENUOC, soLuong, giaTien);
+                    dgvThucDon.Rows.Add(selectedNuoc.TENNUOC, soLuong, giaTien);
                 }
 
                 UpdateTotalPrice();
@@ -143,19 +138,15 @@ namespace Bida
 
         private void LuuDonHangVaoCSDL(int maNuoc, int soLuong, int giaTien)
         {
-            using (var context = new Model()) // Thay Model1 bằng DbContext thực tế của bạn
+            using (var context = new Model())
             {
                 int nextMADV = context.ORDERs.Any() ? context.ORDERs.Max(o => o.MADV) + 1 : 1;
-
-                // Tạo một đối tượng ORDER mới để lưu vào CSDL
                 ORDER newOrder = new ORDER
                 {
                     MADV = nextMADV,
                     MANUOC = maNuoc,
                     SOLUONGKHACHMUA = soLuong,
-                    // Bạn có thể thêm mã bàn và mã biên lai nếu cần
                      MABAN = this.ban.MABAN,
-                    // MABIENLAI = <giá trị tương ứng>,
                 };
 
                 context.ORDERs.Add(newOrder);
@@ -175,17 +166,13 @@ namespace Bida
         {
             int totalPrice = 0;
 
-            // Kiểm tra nếu DataGridView có cột "Column3" hay không
             if (dgvThucDon.Columns.Contains("Column3"))
             {
-                // Duyệt qua tất cả các dòng trong DataGridView để tính tổng giá tiền
                 foreach (DataGridViewRow row in dgvThucDon.Rows)
                 {
-                    // Kiểm tra nếu ô trong cột "Column3" có giá trị hợp lệ và không phải là dòng mới
                     if (row.Cells["Column3"].Value != null && !row.IsNewRow)
                     {
                         int price;
-                        // Kiểm tra nếu giá trị có thể chuyển đổi thành số nguyên
                         if (int.TryParse(row.Cells["Column3"].Value.ToString(), out price))
                         {
                             totalPrice += price;
@@ -206,7 +193,6 @@ namespace Bida
 
             if (selectedNuoc != null)
             {
-                // Hiển thị giá tiền của loại nước được chọn vào txtGiaTien
                 txtGiaTien.Text = selectedNuoc.PRICE.HasValue ? selectedNuoc.PRICE.Value.ToString() : "0";
             }
         }
